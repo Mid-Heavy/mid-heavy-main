@@ -2,8 +2,7 @@
 
 ### Overview
 
-Presently the Mid Heavy main site serves as the primary project by which our tea
-m will learn to work together. Version management and emulation of a professional atmosphere are the objective. 
+Presently the Mid Heavy main site serves as the primary project by which our team will learn to work together. Version management and emulation of a professional atmosphere are the objective. 
 
 ### Specs
 
