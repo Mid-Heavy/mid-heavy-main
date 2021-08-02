@@ -10,5 +10,5 @@ m will learn to work together. Version management and emulation of a professiona
 In it's current iteration, the MH website is a splash page for our fancy logo! W
 e hope to have much more going on very soon! Netlify is our home for now as we conquer CD/ CI !!
 
-- [Anine.js](https://https://animejs.com/)
+- [Anime.js](https://https://animejs.com/)
 
