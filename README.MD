@@ -6,7 +6,7 @@ Presently the Mid Heavy main site serves as the primary project by which our tea
 
 ### Specs
 
-In it's current iteration, the MH website is a splash page for our fancy logo! We hope to have much more going on very soon! Netlify is our home for now as we conquer CD/ CI !!
+In its current iteration, the MH website is a splash page for our fancy logo! We hope to have much more going on very soon! Netlify is our home for now as we conquer CD/ CI !!
 
 - [Anime.js](https://https://animejs.com/)
 - [Particles.js](https://https://vincentgarreau.com/particles.js/)
