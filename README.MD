@@ -1,4 +1,4 @@
-#Mid Heavy - Main Site
+# Mid Heavy - Main Site
 
 ### Overview
 
