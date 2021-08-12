@@ -42,7 +42,33 @@
         </ul>
       </div>
 
-      <div style="margin-top: 15%;" class="container">
+        <div class="container">
+          <div style="text-align:center">
+            <p class="h2 text-info">Contact Us</p>
+            <p>leave us a message</p>
+          </div>
+          <div class="row">
+            <div class="column">
+              <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+          </div>
+        </div>
+
+      <!-- <div style="margin-top: 15%;" class="container">
         <div style="max-width: 65em; text-align: center;" class="mx-auto">
           <p class="h1 text-success">ABOUT US</p>
       
@@ -50,7 +76,7 @@
           <button style="border-radius: 10px;" type="button" class="btn btn-dark mt-4 pl-3 pr-3">Learn More</button>
         </div>
 
-      </div>
+      </div> -->
      
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
