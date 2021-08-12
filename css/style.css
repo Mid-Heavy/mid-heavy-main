@@ -174,7 +174,6 @@ body {
 
 canvas {
   display: block;
-  vertical-align: bottom;
 }
 
 /* ---- navbar ---- */
@@ -363,10 +362,6 @@ body {
 }
 
 /* =============================== contact page css ======================================= */
-
-* {
-  box-sizing: border-box;
-}
 
 input[type=text], select, textarea {
   width: 100%;
