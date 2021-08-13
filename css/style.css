@@ -374,18 +374,17 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-  text-align: center;
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-input[type=submit]:hover {
-  background-color: #45a049;
-}
 
 /* Create two columns that float next to eachother */
 .column {
