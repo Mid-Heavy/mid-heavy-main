@@ -10,48 +10,84 @@
     />
 
     <!-- CSS IMPORTS-->
-    <link rel="stylesheet" media="screen" href="css/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" media="screen" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="css/bootstrap/bootstrap.min.css"
+    />
+    <link rel="stylesheet" media="screen" href="css/about.css" />
   </head>
-  
+
   <body>
     <!-- PARTICLE JS CONAITER / TARGET -->
     <div id="particles-js"></div>
 
     <!-- NAV BAR -->
-    <div class="image-box d">
-      <div class="navbar-wrapper">
-        <ul class="navbar">
-          <li class="nav-logo-wrapper">
-            <a href="/index.html"
-              ><img
-                src="../assets/logo.svg"
-                class="nav-logo"
-                width="93.75"
-                height="92.25"
-                alt="logo"
-              />
-              <div class="nav-mh">MidHeavy</div></a
-            >
-          </li>
-          <li class="nav-link"><a href="/about.html">About</a></li>
-          <li class="nav-link"><a href="/contact.html">Contact</a></li>
-          <!-- <li class="nav-link"><a href="">Link3</a></li>
+    <div class="navbar-wrapper w-100">
+      <ul class="navbar">
+        <li class="nav-logo-wrapper">
+          <a href="/index.html"
+            ><img
+              src="../assets/logo.svg"
+              class="nav-logo"
+              width="93.75"
+              height="92.25"
+              alt="logo"
+            />
+            <div class="nav-mh">MidHeavy</div></a
+          >
+        </li>
+        <li class="nav-link"><a href="/about.html">About</a></li>
+        <li class="nav-link"><a href="/contact.html">Contact</a></li>
+        <!-- <li class="nav-link"><a href="">Link3</a></li>
           <li class="nav-link"><a href="">Link4</a></li>
           <li class="nav-link"><a href="">Link5</a></li> -->
-        </ul>
-      </div>
+      </ul>
+    </div>
 
-      <div style="margin-top: 15%;" class="container">
-        <div style="max-width: 65em; text-align: center;" class="mx-auto">
-          <p class="h1 text-success">ABOUT US</p>
-      
-          <p>Mid Heavy is a team of tech enthusiasts, passionate about making cool projects, and learning along the way!</p>
-          <button style="border-radius: 10px;" type="button" class="btn btn-dark mt-4 pl-3 pr-3">Learn More</button>
+    <!-- About us Containers -->
+    <div class="aboutPage">
+      <section class="aboutSection" id="about">
+        <div class="aboutBox">
+          <div style="max-width: 65em; text-align: center" class="mx-auto">
+            <p class="h1 text-success">ABOUT US</p>
+
+            <p>
+              Mid Heavy is a team of tech enthusiasts, passionate about making
+              cool projects, and learning along the way!
+            </p>
+            <button
+              style="border-radius: 10px"
+              type="button"
+              class="btn btn-dark mt-4 pl-3 pr-3"
+            >
+              Learn More
+            </button>
+          </div>
         </div>
+      </section>
+      <section class="aboutSection" id="chris">
+        <div class="aboutBox">
+          <p class="h1 text-success">Chris</p>
+        </div>
+      </section>
+      <section class="aboutSection" id="mac">
+        <div class="aboutBox">
+          <p class="h1 text-success">Mac</p>
+        </div>
+      </section>
+      <section class="aboutSection" id="millie">
+        <div class="aboutBox">
+          <p class="h1 text-success">Millie</p>
+        </div>
+      </section>
+      <section class="aboutSection" id="rori">
+        <div class="aboutBox">
+          <p class="h1 text-success">rori</p>
+        </div>
+      </section>
+    </div>
 
-      </div>
-     
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
       integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
