@@ -11,5 +11,3 @@ In its current iteration, the MH website is a splash page for our fancy logo! We
 - [Anime.js](https://https://animejs.com/)
 - [Particles.js](https://https://vincentgarreau.com/particles.js/)
 - [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
-
-TODO: Add content to about page
