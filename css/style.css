@@ -111,8 +111,8 @@ q:after {
 }
 
 /* =============================================================================
-         My CSS
-         ========================================================================== */
+      My CSS
+      ========================================================================== */
 
 /* ---- base ---- */
 
@@ -206,8 +206,6 @@ canvas {
   background-color: rgba(59, 59, 59, 0.7);
 }
 
-/* ---- stats.js ---- */
-
 .count-particles {
   background: #000022;
   position: absolute;
@@ -226,18 +224,6 @@ canvas {
 
 .js-count-particles {
   font-size: 1.1em;
-}
-
-#stats,
-.count-particles {
-  --webkit-user-select: none;
-  margin-top: 5px;
-  margin-left: 5px;
-}
-
-#stats {
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
 }
 
 .count-particles {
@@ -346,7 +332,6 @@ textarea {
     margin-top: 0;
   }
 }
-
 /* about page */
 .aboutPage {
   width: 100%;

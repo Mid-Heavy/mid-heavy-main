@@ -11,7 +11,7 @@
 
     <!-- CSS IMPORTS-->
     <link rel="stylesheet" media="screen" href="css/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" media="screen" href="css/contact.css" />
+    <link rel="stylesheet" media="screen" href="css/style.css" />
   </head>
   
   <body>
@@ -19,7 +19,7 @@
     <div id="particles-js"></div>
 
     <!-- NAV BAR -->
-    <div class="image-box d">
+    <div class="centered d-flex">
       <div class="navbar-wrapper">
         <ul class="navbar">
           <li class="nav-logo-wrapper">
@@ -34,21 +34,20 @@
           </li>
           <li class="nav-link"><a href="/about.html">About</a></li>
           <li class="nav-link"><a href="/contact.html">Contact</a></li>
-          <!-- <li class="nav-link"><a href="">Link3</a></li> -->
-          <!--<li class="nav-link"><a href="">Link4</a></li> -->
-          <!--<li class="nav-link"><a href="">Link5</a></li> -->
+
         </ul>
       </div>
-        <div class="container m-auto">
+
+      <div class="container m-auto">
           <div style="text-align:center">
             <p class="h1 text-info">Contact Us</p>
             <p>Send us a message!</p>
           </div>
               <form action="/action_page.php">
                 <label class="text-info" for="name">Name</label>
-                <input style="border-radius: 10px;" type="text" id="fname" name="firstname" placeholder="Your Name">
+                <input style="border-radius: 10px;" type="text" id="fname" name="firstname" placeholder="Your Name"/>
                 <label class="text-info" for="email">Email</label>
-                <input style="border-radius: 10px;" type="email" id="email" name="email" placeholder="Your Email">
+                <input style="border-radius: 10px;" type="email" id="email" name="email" placeholder="Your Email"/>
                 <label class="text-info" for="country">Country</label>
                 <select style="border-radius: 10px;"  id="country" name="country">
                   <option value="canada">Canada</option>
@@ -64,14 +63,8 @@
                 <input style="border-radius: 10px; max-width: 48%"  type="submit" class="btn btn-info btn-block pl-3 pr-3 m-auto">
               </form>
             </div>
-          </div>
-        </div>
 
-    <script>src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
-      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    </script>
+
 
     <!-- libraries -->
     <script src="./js/lib/particles.js"></script>
