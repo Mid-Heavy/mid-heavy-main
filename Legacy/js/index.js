@@ -1,24 +1,24 @@
 /*               --- Particle JS ---               */
 particlesJS.load("particles-js", "particles.json", function () {
-  console.log("particles.js loaded - callback");
-});
+  console.log("particles.js loaded - callback")
+})
 
 /*       --- Mid Heavy Timeline Animation ---       */
-var basicTimeline = anime.timeline();
-basicTimeline.reverse();
-var TIME_MULTIPLIER = 1.3;
+var basicTimeline = anime.timeline()
+basicTimeline.reverse()
+var TIME_MULTIPLIER = 1.3
 
 function H() {
   // Make the line visible
-  document.getElementById("hPath").style.display = "block";
+  document.getElementById("hPath").style.display = "block"
   return {
     targets: "#hPath",
     translateX: 100,
     direction: "reverse",
     easing: "easeInOutExpo",
     duration: TIME_MULTIPLIER * 150,
-    delay: TIME_MULTIPLIER * 100,
-  };
+    delay: TIME_MULTIPLIER * 100
+  }
 }
 
 function Back(backTarget) {
@@ -28,8 +28,8 @@ function Back(backTarget) {
     translateX: -35,
     direction: "reverse",
     easing: "linear",
-    duration: TIME_MULTIPLIER * 110,
-  };
+    duration: TIME_MULTIPLIER * 110
+  }
 }
 
 function Front(frontTarget) {
@@ -39,8 +39,8 @@ function Front(frontTarget) {
     translateX: -35,
     direction: "reverse",
     easing: "linear",
-    duration: TIME_MULTIPLIER * 110,
-  };
+    duration: TIME_MULTIPLIER * 110
+  }
 }
 
 // This runs from the bottom up
@@ -64,5 +64,5 @@ basicTimeline
   .add({
     targets: "p",
     color: "rgba(214, 214, 214, 0)",
-    duration: TIME_MULTIPLIER * 500,
-  });
+    duration: TIME_MULTIPLIER * 500
+  })
