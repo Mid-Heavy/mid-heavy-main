@@ -5,7 +5,7 @@ import About from "./pages/About"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import Footer from "./components/Footer"
 import Particles from "react-particles-js"
-import ParticlesConfig from "../src/js/lib/particles.json"
+import ParticlesConfig from "../src/js/lib/particlesConfig.json"
 
 function App() {
   return (
