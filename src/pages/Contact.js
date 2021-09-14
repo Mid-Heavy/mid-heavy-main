@@ -16,11 +16,17 @@ const style4 = {
   maxWidth: "48%",
 };
 
+const header1 = {
+  fontFamily: "Rajdhani",
+  fontWeight: 900,
+};
 export default function Contact() {
   return (
     <div className="container m-auto">
       <div style={style1}>
-        <p className="h1 text-info">Contact Us</p>
+        <p style={header1} className="h1 text-info">
+          Contact Us
+        </p>
         <p>Send us a message!</p>
       </div>
       <form action="/action_page.php">

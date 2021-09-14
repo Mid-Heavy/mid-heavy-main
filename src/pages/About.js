@@ -1,5 +1,4 @@
 import React from "react";
-import MHLogo from "../assets/logo.svg";
 
 const style1 = {
   maxWidth: "65em",
@@ -17,7 +16,6 @@ export default function About() {
         <div className="aboutBox">
           <div style={style1} className="mx-auto">
             <p className="h1 text-success">ABOUT US</p>
-
             <p>
               Mid Heavy is a team of tech enthusiasts, passionate about making
               cool projects, and learning along the way!
