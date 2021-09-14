@@ -1,13 +1,21 @@
-import React from 'react'
-import MHLogo from '../assets/logo.svg'
+import React from "react";
+import MHLogo from "../assets/logo.svg";
 
+const style1 = {
+  maxWidth: "65em",
+  textAlign: "center",
+};
+
+const style2 = {
+  borderRadius: "10px",
+};
 
 export default function About() {
   return (
     <div className="aboutPage">
       <div className="about" id="about">
         <div className="aboutBox">
-          <div style="max-width: 65em; text-align: center" className="mx-auto">
+          <div style={style1} className="mx-auto">
             <p className="h1 text-success">ABOUT US</p>
 
             <p>
@@ -15,7 +23,7 @@ export default function About() {
               cool projects, and learning along the way!
             </p>
             <button
-              style="border-radius: 10px"
+              style={style2}
               type="button"
               class="btn btn-dark mt-4 pl-3 pr-3"
             >
@@ -25,5 +33,5 @@ export default function About() {
         </div>
       </div>
     </div>
-  )
+  );
 }
