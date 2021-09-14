@@ -5,7 +5,6 @@ import About from "./pages/About";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
-import { Container } from "react-bootstrap";
 
 function App() {
   return (

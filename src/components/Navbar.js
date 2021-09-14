@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import MHLogo from "../assets/logo.svg";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const style = {
