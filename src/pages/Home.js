@@ -1,14 +1,23 @@
-import React from "react";
-import AnimLogo from "../components/AnimLogo";
-import { Container } from "react-bootstrap";
+import React from "react"
+import AnimLogo from "../components/AnimLogo"
+import { Container } from "react-bootstrap"
+
+const style = {
+  position: "relative",
+  zIndex: 2,
+  textAlign: "center",
+  height: "100%",
+  width: "100%",
+  marginTop: "25%"
+}
 
 export default function Home() {
   return (
-    <Container style={{ height: "100%", marginTop: "25%" }}>
-      <Container>
-        <AnimLogo className="m-auto"></AnimLogo>
+    <Container>
+      <Container style={style}>
+        <AnimLogo></AnimLogo>
         <p>MidHeavy.tech</p>
       </Container>
     </Container>
-  );
+  )
 }

@@ -1,10 +1,10 @@
-import "./App.css";
-import MHNavbar from "./components/Navbar";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Footer from "./components/Footer";
-import Contact from "./pages/Contact";
+import "./App.css"
+import MHNavbar from "./components/Navbar"
+import Home from "./pages/Home"
+import About from "./pages/About"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import Footer from "./components/Footer"
+import Contact from "./pages/Contact"
 
 function App() {
   return (
@@ -24,10 +24,10 @@ function App() {
           </Route>
         </Switch>
 
-        <Footer></Footer>
+        <Footer />
       </Router>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

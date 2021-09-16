@@ -235,15 +235,12 @@ canvas {
 
 /* ---- particles.js container ---- */
 
-#particles-js {
+#particle-canvas {
   position: fixed;
   width: 100%;
   height: 100%;
   background-color: #202020;
-  background-image: url("");
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  z-index: 0;
 }
 
 /* Main CSS  */
