@@ -6,6 +6,11 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import Footer from "./components/Footer"
 import Contact from "./pages/Contact"
 
+const bringToTop = {
+  position: "relative",
+  zIndex: 10
+}
+
 function App() {
   return (
     <div className="App">
@@ -14,13 +19,13 @@ function App() {
 
         <Switch>
           <Route exact path={["/home", "/", ""]}>
-            <Home></Home>
+            <Home style={bringToTop}></Home>
           </Route>
           <Route exact path={"/about"}>
-            <About></About>
+            <About style={bringToTop}></About>
           </Route>
           <Route exact path={"/contact"}>
-            <Contact />
+            <Contact style={bringToTop} />
           </Route>
         </Switch>
 

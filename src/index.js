@@ -6,14 +6,9 @@ import "./css/style.css"
 import App from "./App"
 import ParticlesBackground from "./components/ParticlesBackground"
 
-const bringToTop = {
-  position: "relative",
-  zIndex: "10"
-}
-
 ReactDOM.render(
   <React.StrictMode>
-    <App style={bringToTop} />
+    <App />
     <ParticlesBackground />
   </React.StrictMode>,
   document.getElementById("root")
