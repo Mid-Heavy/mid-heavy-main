@@ -335,7 +335,7 @@ textarea {
 /* about page */
 .aboutPage {
   width: 100%;
-  height: 100%;
+  height: 91%;
   padding: 0;
   overflow-y: scroll;
   flex-direction: column;
@@ -344,12 +344,14 @@ textarea {
 }
 
 .aboutSection {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
   scroll-snap-align: start;
+  z-index: 10;
 }
 
 .aboutBox {

@@ -1,35 +1,40 @@
-import React from "react";
-
-const style1 = {
-  maxWidth: "65em",
-  textAlign: "center",
-};
-
-const style2 = {
-  borderRadius: "10px",
-};
+import React from "react"
 
 export default function About() {
   return (
     <div className="aboutPage">
-      <div className="about" id="about">
+      <section className="aboutSection" id="about">
         <div className="aboutBox">
-          <div style={style1} className="mx-auto">
+          <div style={{ maxWidth: "80%", textAlign: "center" }} className="mx-auto">
             <p className="h1 text-success">ABOUT US</p>
-            <p>
-              Mid Heavy is a team of tech enthusiasts, passionate about making
-              cool projects, and learning along the way!
-            </p>
-            <button
-              style={style2}
-              type="button"
-              class="btn btn-dark mt-4 pl-3 pr-3"
-            >
+
+            <p>Mid Heavy is a team of tech enthusiasts, passionate about making cool projects, and learning along the way!</p>
+            <button style={{ borderRadius: "10px" }} type="button" className="btn btn-dark mt-4 pl-3 pr-3">
               Learn More
             </button>
           </div>
         </div>
-      </div>
+      </section>
+      <section className="aboutSection" id="chris">
+        <div className="aboutBox">
+          <p className="h1 text-success">Chris</p>
+        </div>
+      </section>
+      <section className="aboutSection" id="mac">
+        <div className="aboutBox">
+          <p className="h1 text-success">Mac</p>
+        </div>
+      </section>
+      <section className="aboutSection" id="millie">
+        <div className="aboutBox">
+          <p className="h1 text-success">Millie</p>
+        </div>
+      </section>
+      <section className="aboutSection" id="rori">
+        <div className="aboutBox">
+          <p className="h1 text-success">rori</p>
+        </div>
+      </section>
     </div>
-  );
+  )
 }
