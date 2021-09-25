@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "react-bootstrap/Nav";
 import { RiTwitterLine } from "react-icons/ri";
 import { RiGithubLine } from "react-icons/ri";
+import { RiDiscordLine } from "react-icons/ri";
 
 const footerStyle = {
     backgroundColor: "rgba(26, 26, 26, 0.7)",
@@ -9,6 +10,7 @@ const footerStyle = {
     bottom: "0",
     width: "100%",
     height: "35px",
+    zIndex: "1",
 };
 
 const iconStyle = {
@@ -42,6 +44,14 @@ export default function Footer() {
                 style={navLinkStyle}
             >
                 <RiTwitterLine style={iconStyle} />
+            </Nav.Link>
+
+            <Nav.Link
+                href="https://discord.gg/e9mFvZ3W"
+                target="blank"
+                style={navLinkStyle}
+            >
+                <RiDiscordLine style={iconStyle} />
             </Nav.Link>
         </Nav>
     );
