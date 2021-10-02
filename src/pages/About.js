@@ -1,18 +1,16 @@
 import React from "react"
+import GenericContent from "../components/GenericContent"
+import { Container } from "react-bootstrap"
 
 export default function About() {
   return (
     <div className="aboutPage">
       <section className="aboutSection" id="about">
         <div className="aboutBox">
-          <div style={{ maxWidth: "80%", textAlign: "center" }} className="mx-auto">
-            <p className="h1 text-success">ABOUT US</p>
-
-            <p>Mid Heavy is a team of tech enthusiasts, passionate about making cool projects, and learning along the way!</p>
-            <button style={{ borderRadius: "10px" }} type="button" className="btn btn-dark mt-4 pl-3 pr-3">
-              Learn More
-            </button>
-          </div>
+          <Container>
+            
+            <GenericContent/>
+          </Container>
         </div>
       </section>
       <section className="aboutSection" id="chris">
