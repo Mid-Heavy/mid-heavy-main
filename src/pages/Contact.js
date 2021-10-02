@@ -1,67 +1,73 @@
 import React from "react"
+import { Container, Card, Button } from "react-bootstrap"
+import Form from "react-bootstrap/Form"
 
-const style1 = {
-  textAlign: "center"
-}
-const style2 = {
-  borderRadius: "10px"
-}
-const style3 = {
-  height: "250px",
-  borderRadius: "20px"
-}
-
-const style4 = {
-  borderRadius: "10px",
-  maxWidth: "48%"
-}
-
-const header1 = {
-  fontFamily: "Rajdhani",
-  fontWeight: 900
-}
-
-const bringToTop = {
-  position: "relative",
-  zIndex: 10
+const style = {
+  card: {
+    borderRadius: "10px",
+    backgroundColor: "rgba(26, 26, 26, 0.7)",
+    maxWidth: "56em",
+    margin: "auto"
+  },
+  container: {
+    position: "relative",
+    zIndex: 2,
+    marginTop: "5vh"
+  },
+  font: {
+    fontFamily: "Rajdhani"
+  },
+  labelText: {
+    color: "#ffffff",
+    fontFamily: "Rajdhani",
+    fontSize: "1.5em"
+  },
+  titleText: {
+    fontFamily: "Rajdhani",
+    fontWeight: 900,
+    color: "#ffffff"
+  }
 }
 
 export default function Contact() {
   return (
-    <div style={bringToTop} className="container m-auto">
-      <div style={style1}>
-        <p style={header1} className="h1 text-info">
-          Contact Us
-        </p>
-        <p>Send us a message!</p>
-      </div>
-      <form action="/action_page.php">
-        <label className="text-info" for="name">
-          Name
-        </label>
-        <input style={style2} type="text" id="fname" name="firstname" placeholder="Your Name" />
-        <label className="text-info" for="email">
-          Email
-        </label>
-        <input style={style2} type="email" id="email" name="email" placeholder="Your Email" />
-        <label className="text-info" for="country">
-          Country
-        </label>
-        <select style={style2} id="country" name="country">
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-          <option value="norway">Norway</option>
-          <option value="singapore">Singapore</option>
-          <option value="greenland">Greenland</option>
-          <option value="iceland">Iceland</option>
-          <option value="new zealand">New Zealand</option>
-        </select>
-        <label className="text-info" for="message">
-          Message
-        </label>
-        <textarea style={style3} id="message" name="message" placeholder="Write something.."></textarea>
-        <input style={style4} type="submit" className="btn btn-info btn-block pl-3 pr-3 m-auto" />
-      </form>
-    </div>
+    <Container style={style.container}>
+      <Card style={style.card}>
+        <Card.Body>
+          <Container>
+            <Form style={style.font}>
+              <Form.Group className="mb-3">
+                <Form.Label style={style.labelText}>Name</Form.Label>
+                <Form.Control type="text" placeholder="Your Name" />
+              </Form.Group>
+
+              <Form.Group className="mb-3">
+                <Form.Label style={style.labelText}>Email</Form.Label>
+                <Form.Control type="email" placeholder="name@example.com" />
+              </Form.Group>
+
+              <Form.Group>
+                <Form.Label style={style.labelText}>Region</Form.Label>
+                <Form.Control as="select" size="md">
+                  <option>Open this select menu</option>
+                  <option value="1">North America</option>
+                  <option value="2">Europe</option>
+                </Form.Control>
+              </Form.Group>
+
+              <Form.Group className="mb-3">
+                <Form.Label style={style.labelText}>Message</Form.Label>
+                <Form.Control as="textarea" rows={3} />
+              </Form.Group>
+              <Form.Group>
+                <Button size="lg" variant="success" type="submit" style={{ width: "100%" }}>
+                  Submit
+                </Button>
+              </Form.Group>
+            </Form>
+          </Container>
+        </Card.Body>
+      </Card>
+    </Container>
   )
 }
