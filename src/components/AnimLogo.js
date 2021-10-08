@@ -21,7 +21,7 @@ const LogoRawSVG = () => {
 export default function AnimLogo() {
   return (
     <Container fluid>
-      <img id="logo-svg" height="370" style={{ marginTop: "5em", overflow: "" }} src={logo} />
+      <img id="logo-svg" style={{ marginTop: "5em", overflow: "", height: "22vh" }} src={logo} />
     </Container>
   )
 }
