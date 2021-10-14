@@ -7,27 +7,27 @@ import Contact from "./pages/Contact";
 import PageNotFound from "./pages/PageNotFound";
 
 function App() {
-    return (
-        <div className="App">
-            <Router>
-                <Footer />
-                <Switch>
-                    <Route exact path={["/home", "/", ""]}>
-                        <Home></Home>
-                    </Route>
-                    <Route exact path={"/about"}>
-                        <About></About>
-                    </Route>
-                    <Route exact path={"/contact"}>
-                        <Contact />
-                    </Route>
-                    <Route exact path={""}>
-                        <PageNotFound />
-                    </Route>
-                </Switch>
-            </Router>
-        </div>
-    );
+  return (
+    <div className="App">
+      <Router>
+        <Footer />
+        <Switch>
+          <Route exact path={["/home", "/", ""]}>
+            <Home />
+          </Route>
+          <Route exact path={"/about"}>
+            <About />
+          </Route>
+          <Route exact path={"/contact"}>
+            <Contact />
+          </Route>
+          <Route exact path={""}>
+            <PageNotFound />
+          </Route>
+        </Switch>
+      </Router>
+    </div>
+  );
 }
 
 export default App;
