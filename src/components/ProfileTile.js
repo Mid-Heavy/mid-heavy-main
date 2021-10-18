@@ -2,10 +2,8 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import Background1 from "../assets/moodyTree.png";
 
-// CSS THAT IS FOR BOTH
-
-// LEFT CSS
-const tileStyleLeft = {
+// CSS THAT IS FOR BOTH LEFT AND RIGHT
+const tileStyle = {
     fontFamily: "Rajdhani",
     color: "white",
     marginTop: "50px",
@@ -19,6 +17,15 @@ const tileStyleLeft = {
     backgroundSize: "cover",
 };
 
+const bodyStyle = {
+    margin: "0",
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr 1fr 1fr",
+    gridTemplateRows: "1fr 1fr 1fr auto 10px",
+    zIndex: "3",
+};
+
+// LEFT CSS
 const tileShadowLeft = {
     position: "absolute",
     width: "100%",
@@ -26,14 +33,6 @@ const tileShadowLeft = {
     backgroundColor: "rgba(26, 26, 26, 0.7)",
     clipPath: "polygon(40% 0, 100% 0, 100% 100%, 20% 100%)",
     zIndex: "2",
-};
-
-const bodyStyleLeft = {
-    margin: "0",
-    display: "grid",
-    gridTemplateColumns: "1fr 1fr 1fr 1fr",
-    gridTemplateRows: "1fr 1fr 1fr auto 10px",
-    zIndex: "3",
 };
 
 const tileLoginStyleLeft = {
@@ -87,20 +86,6 @@ const tileProfilePicLeft = {
 };
 
 // RIGHT CSS
-const tileStyle = {
-    fontFamily: "Rajdhani",
-    color: "white",
-    marginTop: "50px",
-    maxWidth: "700px",
-    zIndex: "1",
-    height: "300px",
-    marginRight: "auto",
-    marginLeft: "auto",
-    padding: "0",
-    backgroundImage: "url(" + Background1 + ")",
-    backgroundSize: "cover",
-};
-
 const tileShadow = {
     position: "absolute",
     width: "100%",
@@ -108,14 +93,6 @@ const tileShadow = {
     backgroundColor: "rgba(26, 26, 26, 0.7)",
     clipPath: "polygon(0 0, 80% 0, 60% 100%, 0 100%)",
     zIndex: "2",
-};
-
-const bodyStyle = {
-    margin: "0",
-    display: "grid",
-    gridTemplateColumns: "1fr 1fr 1fr 1fr",
-    gridTemplateRows: "1fr 1fr 1fr auto 10px",
-    zIndex: "3",
 };
 
 const tileLoginStyle = {
@@ -215,9 +192,9 @@ export default function ProfileTile(props) {
     if (isLeft) {
         return (
             <div>
-                <Card style={tileStyleLeft}>
+                <Card style={tileStyle}>
                     <div style={tileShadowLeft}></div>
-                    <Card.Body style={bodyStyleLeft}>
+                    <Card.Body style={bodyStyle}>
                         <Card.Title style={tileLoginStyleLeft}>
                             {TEMP_PROFILE_DATA.login}
                         </Card.Title>
