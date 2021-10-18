@@ -1,5 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
+import { RiGithubLine } from "react-icons/ri";
 
 // CSS THAT IS FOR BOTH LEFT AND RIGHT
 const bodyStyle = {
@@ -8,6 +9,13 @@ const bodyStyle = {
     gridTemplateColumns: "1fr 1fr 1fr 1fr",
     gridTemplateRows: "1fr 1fr 1fr auto 10px",
     zIndex: "3",
+};
+
+const iconStyle = {
+    height: "14px",
+    width: "14px",
+    color: "white",
+    marginRight: "2px",
 };
 
 // LEFT CSS
@@ -209,15 +217,12 @@ export default function ProfileTile(props) {
                             {TEMP_PROFILE_DATA.bio}
                         </Card.Text>
                         <div style={tileLogosStyleLeft}>
-                            <div
-                                style={{
-                                    height: "10px",
-                                    width: "10px",
-                                    backgroundColor: "white",
-                                    borderRadius: "50%",
-                                    marginRight: "2px",
-                                }}
-                            ></div>
+                            <Card.Link
+                                href={TEMP_PROFILE_DATA.html_url}
+                                target="blank"
+                            >
+                                <RiGithubLine style={iconStyle} />
+                            </Card.Link>
                             <div
                                 style={{
                                     height: "10px",
@@ -276,15 +281,12 @@ export default function ProfileTile(props) {
                         {TEMP_PROFILE_DATA.bio}
                     </Card.Text>
                     <div style={tileLogosStyle}>
-                        <div
-                            style={{
-                                height: "10px",
-                                width: "10px",
-                                backgroundColor: "white",
-                                borderRadius: "50%",
-                                marginRight: "2px",
-                            }}
-                        ></div>
+                        <Card.Link
+                            href={TEMP_PROFILE_DATA.html_url}
+                            target="blank"
+                        >
+                            <RiGithubLine style={iconStyle} />
+                        </Card.Link>
                         <div
                             style={{
                                 height: "10px",
