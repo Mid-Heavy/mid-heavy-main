@@ -1,22 +1,7 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import Background from imgPath;
 
 // CSS THAT IS FOR BOTH LEFT AND RIGHT
-const tileStyle = {
-    fontFamily: "Rajdhani",
-    color: "white",
-    marginTop: "50px",
-    maxWidth: "700px",
-    zIndex: "1",
-    height: "300px",
-    marginRight: "auto",
-    marginLeft: "auto",
-    padding: "0",
-    backgroundImage: "url(" + Background + ")",
-    backgroundSize: "cover",
-};
-
 const bodyStyle = {
     margin: "0",
     display: "grid",
@@ -76,8 +61,8 @@ const tileLogosStyleLeft = {
 
 const tileProfilePicLeft = {
     borderRadius: "50%",
-    height: "100px",
-    width: "100px",
+    height: "125px",
+    width: "125px",
     gridColumnStart: "1",
     gridColumnEnd: "span 1",
     gridRowStart: "1",
@@ -136,8 +121,8 @@ const tileLogosStyle = {
 
 const tileProfilePic = {
     borderRadius: "50%",
-    height: "100px",
-    width: "100px",
+    height: "125px",
+    width: "125px",
     gridColumnStart: "4",
     gridColumnEnd: "span 1",
     gridRowStart: "1",
@@ -187,12 +172,27 @@ const TEMP_PROFILE_DATA = {
 export default function ProfileTile(props) {
     const groupData = props.data;
     console.log(groupData);
-    const imgPath = props.imgPath
+    const background = props.imgPath;
     const isLeft = props.isLeft;
     if (isLeft) {
         return (
             <div>
-                <Card style={tileStyle}>
+                <Card
+                    style={{
+                        fontFamily: "Rajdhani",
+                        color: "white",
+                        marginTop: "50px",
+                        maxWidth: "700px",
+                        zIndex: "1",
+                        height: "300px",
+                        marginRight: "auto",
+                        marginLeft: "auto",
+                        padding: "0",
+                        backgroundImage: "url(" + background + ")",
+                        backgroundSize: "cover",
+                        backgroundColor: "black",
+                    }}
+                >
                     <div style={tileShadowLeft}></div>
                     <Card.Body style={bodyStyle}>
                         <Card.Title style={tileLoginStyleLeft}>
@@ -244,7 +244,22 @@ export default function ProfileTile(props) {
     }
     return (
         <div>
-            <Card style={tileStyle}>
+            <Card
+                style={{
+                    fontFamily: "Rajdhani",
+                    color: "white",
+                    marginTop: "50px",
+                    maxWidth: "700px",
+                    zIndex: "1",
+                    height: "300px",
+                    marginRight: "auto",
+                    marginLeft: "auto",
+                    padding: "0",
+                    backgroundImage: "url(" + background + ")",
+                    backgroundSize: "cover",
+                    backgroundColor: "black",
+                }}
+            >
                 <div style={tileShadow}></div>
                 <Card.Body style={bodyStyle}>
                     <Card.Title style={tileLoginStyle}>
