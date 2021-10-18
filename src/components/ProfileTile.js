@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import Background1 from "../assets/moodyTree.png";
+import Background from imgPath;
 
 // CSS THAT IS FOR BOTH LEFT AND RIGHT
 const tileStyle = {
@@ -13,7 +13,7 @@ const tileStyle = {
     marginRight: "auto",
     marginLeft: "auto",
     padding: "0",
-    backgroundImage: "url(" + Background1 + ")",
+    backgroundImage: "url(" + Background + ")",
     backgroundSize: "cover",
 };
 
@@ -187,7 +187,7 @@ const TEMP_PROFILE_DATA = {
 export default function ProfileTile(props) {
     const groupData = props.data;
     console.log(groupData);
-
+    const imgPath = props.imgPath
     const isLeft = props.isLeft;
     if (isLeft) {
         return (
