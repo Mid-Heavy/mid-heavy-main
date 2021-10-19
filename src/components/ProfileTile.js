@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import { Card, Container } from "react-bootstrap";
 import { RiGithubLine } from "react-icons/ri";
 
 // CSS THAT IS FOR BOTH LEFT AND RIGHT
@@ -155,61 +155,6 @@ export default function ProfileTile(props) {
   const isLeft = props.isLeft;
   if (isLeft) {
     return (
-      <div>
-        <Card
-          style={{
-            fontFamily: "Rajdhani",
-            color: "white",
-            marginTop: "50px",
-            maxWidth: "700px",
-            zIndex: "1",
-            height: "300px",
-            marginRight: "auto",
-            marginLeft: "auto",
-            padding: "0",
-            backgroundImage: "url(" + background + ")",
-            backgroundSize: "cover",
-            backgroundColor: "black",
-          }}
-        >
-          <div style={tileShadowLeft}></div>
-          <Card.Body style={bodyStyle}>
-            <Card.Title style={tileLoginStyleLeft}>
-              {groupData.login}
-            </Card.Title>
-            <Card.Title style={tileNameStyleLeft}>{groupData.name}</Card.Title>
-            <img style={tileProfilePicLeft} src={groupData.avatar_url}></img>
-            <Card.Text style={tileBioStyleLeft}>{groupData.bio}</Card.Text>
-            <div style={tileLogosStyleLeft}>
-              <Card.Link href={groupData.html_url} target="blank">
-                <RiGithubLine style={iconStyle} />
-              </Card.Link>
-              <div
-                style={{
-                  height: "10px",
-                  width: "10px",
-                  backgroundColor: "white",
-                  borderRadius: "50%",
-                  marginRight: "2px",
-                }}
-              ></div>
-              <div
-                style={{
-                  height: "10px",
-                  width: "10px",
-                  backgroundColor: "white",
-                  borderRadius: "50%",
-                  marginRight: "2px",
-                }}
-              ></div>
-            </div>
-          </Card.Body>
-        </Card>
-      </div>
-    );
-  }
-  return (
-    <div>
       <Card
         style={{
           fontFamily: "Rajdhani",
@@ -226,13 +171,13 @@ export default function ProfileTile(props) {
           backgroundColor: "black",
         }}
       >
-        <div style={tileShadow}></div>
+        <div style={tileShadowLeft}></div>
         <Card.Body style={bodyStyle}>
-          <Card.Title style={tileLoginStyle}>{groupData.login}</Card.Title>
-          <Card.Title style={tileNameStyle}>{groupData.name}</Card.Title>
-          <img style={tileProfilePic} src={groupData.avatar_url}></img>
-          <Card.Text style={tileBioStyle}>{groupData.bio}</Card.Text>
-          <div style={tileLogosStyle}>
+          <Card.Title style={tileLoginStyleLeft}>{groupData.login}</Card.Title>
+          <Card.Title style={tileNameStyleLeft}>{groupData.name}</Card.Title>
+          <img style={tileProfilePicLeft} src={groupData.avatar_url}></img>
+          <Card.Text style={tileBioStyleLeft}>{groupData.bio}</Card.Text>
+          <div style={tileLogosStyleLeft}>
             <Card.Link href={groupData.html_url} target="blank">
               <RiGithubLine style={iconStyle} />
             </Card.Link>
@@ -257,6 +202,55 @@ export default function ProfileTile(props) {
           </div>
         </Card.Body>
       </Card>
-    </div>
+    );
+  }
+  return (
+    <Card
+      style={{
+        fontFamily: "Rajdhani",
+        color: "white",
+        marginTop: "50px",
+        maxWidth: "700px",
+        zIndex: "1",
+        height: "300px",
+        marginRight: "auto",
+        marginLeft: "auto",
+        padding: "0",
+        backgroundImage: "url(" + background + ")",
+        backgroundSize: "cover",
+        backgroundColor: "black",
+      }}
+    >
+      <div style={tileShadow}></div>
+      <Card.Body style={bodyStyle}>
+        <Card.Title style={tileLoginStyle}>{groupData.login}</Card.Title>
+        <Card.Title style={tileNameStyle}>{groupData.name}</Card.Title>
+        <img style={tileProfilePic} src={groupData.avatar_url}></img>
+        <Card.Text style={tileBioStyle}>{groupData.bio}</Card.Text>
+        <div style={tileLogosStyle}>
+          <Card.Link href={groupData.html_url} target="blank">
+            <RiGithubLine style={iconStyle} />
+          </Card.Link>
+          <div
+            style={{
+              height: "10px",
+              width: "10px",
+              backgroundColor: "white",
+              borderRadius: "50%",
+              marginRight: "2px",
+            }}
+          ></div>
+          <div
+            style={{
+              height: "10px",
+              width: "10px",
+              backgroundColor: "white",
+              borderRadius: "50%",
+              marginRight: "2px",
+            }}
+          ></div>
+        </div>
+      </Card.Body>
+    </Card>
   );
 }

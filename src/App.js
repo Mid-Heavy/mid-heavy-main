@@ -5,28 +5,32 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Contact from "./pages/Contact";
 import PageNotFound from "./pages/PageNotFound";
-import { Container } from "react-bootstrap";
+import ParticlesBackground from "./components/ParticlesBackground";
+import { Container, Jumbotron } from "react-bootstrap";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Navbar />
-        <Switch>
-          <Route exact path={["/home", "/", ""]}>
-            <Home />
-          </Route>
-          <Route exact path={"/about"}>
-            <About />
-          </Route>
-          <Route exact path={"/contact"}>
-            <Contact />
-          </Route>
-          <Route exact path={""}>
-            <PageNotFound />
-          </Route>
-        </Switch>
+        <Container style={{ maxHeight: "95vh", overflow: "auto" }}>
+          <Switch>
+            <Route exact path={["/home", "/", ""]}>
+              <Home />
+            </Route>
+            <Route exact path={"/about"}>
+              <About style={{ position: "relative" }} />
+            </Route>
+            <Route exact path={"/contact"}>
+              <Contact />
+            </Route>
+            <Route exact path={""}>
+              <PageNotFound />
+            </Route>
+          </Switch>
+        </Container>
       </Router>
+      <ParticlesBackground />
     </div>
   );
 }

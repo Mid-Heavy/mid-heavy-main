@@ -309,3 +309,24 @@ textarea {
   outline: none;
   border-radius: 10px;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #383838;
+  margin-top: 15px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #111111;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(32, 32, 32);
+}

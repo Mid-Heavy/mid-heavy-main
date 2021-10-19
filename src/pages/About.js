@@ -41,7 +41,7 @@ export default function About() {
   const [groupData, setGroupData] = useState(teamData);
 
   return (
-    <Container>
+    <Container style={{ position: "abosolute", overflow: "auto" }}>
       <ProfileTile imgPath={Background1} isLeft={true} profile={groupData[2]} />
       <ProfileTile imgPath={Background2} profile={groupData[1]} />
       <ProfileTile imgPath={Background3} isLeft={true} profile={groupData[3]} />

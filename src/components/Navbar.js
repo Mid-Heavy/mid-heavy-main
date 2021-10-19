@@ -9,7 +9,7 @@ const navbarStyle = {
   fontFamily: "Rajdhani",
   fontSize: "16px",
   backgroundColor: "rgba(26, 26, 26, 0.7)",
-  position: "fixed",
+  position: "sticky",
   top: "0",
   width: "100%",
   height: "35px",
