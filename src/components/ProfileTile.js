@@ -1,13 +1,14 @@
 import React from "react";
 import { Card, Container } from "react-bootstrap";
 import { RiGithubLine } from "react-icons/ri";
+import { RiTwitterLine } from "react-icons/ri";
 
 // CSS THAT IS FOR BOTH LEFT AND RIGHT
 const bodyStyle = {
     margin: "0",
     display: "grid",
     gridTemplateColumns: "1fr 1fr 1fr 1fr",
-    gridTemplateRows: "1fr 1fr 1fr auto 10px",
+    gridTemplateRows: "1fr 1fr 1fr auto 14px",
     zIndex: "3",
 };
 
@@ -15,6 +16,7 @@ const iconStyle = {
     height: "14px",
     width: "14px",
     color: "white",
+    margin: "0",
     marginRight: "2px",
 };
 
@@ -60,7 +62,7 @@ const tileBioStyleLeft = {
 const tileLogosStyleLeft = {
     display: "flex",
     flex: "inline",
-    justifyContent: "right",
+    justifyContent: "flex-end",
     gridColumnStart: "4",
     gridColumnEnd: "span 1",
     gridRowStart: "5",
@@ -120,7 +122,7 @@ const tileBioStyle = {
 const tileLogosStyle = {
     display: "flex",
     flex: "inline",
-    justifyContent: "left",
+    justifyContent: "flex-start",
     gridColumnStart: "1",
     gridColumnEnd: "span 1",
     gridRowStart: "5",
@@ -192,24 +194,17 @@ export default function ProfileTile(props) {
                         <Card.Link href={groupData.html_url} target="blank">
                             <RiGithubLine style={iconStyle} />
                         </Card.Link>
-                        <div
-                            style={{
-                                height: "10px",
-                                width: "10px",
-                                backgroundColor: "white",
-                                borderRadius: "50%",
-                                marginRight: "2px",
-                            }}
-                        ></div>
-                        <div
-                            style={{
-                                height: "10px",
-                                width: "10px",
-                                backgroundColor: "white",
-                                borderRadius: "50%",
-                                marginRight: "2px",
-                            }}
-                        ></div>
+                        {groupData.twitter_username && (
+                            <Card.Link
+                                href={
+                                    "https://twitter.com/" +
+                                    groupData.twitter_username
+                                }
+                                target="blank"
+                            >
+                                <RiTwitterLine style={iconStyle} />
+                            </Card.Link>
+                        )}
                     </div>
                 </Card.Body>
             </Card>
@@ -246,24 +241,17 @@ export default function ProfileTile(props) {
                     <Card.Link href={groupData.html_url} target="blank">
                         <RiGithubLine style={iconStyle} />
                     </Card.Link>
-                    <div
-                        style={{
-                            height: "10px",
-                            width: "10px",
-                            backgroundColor: "white",
-                            borderRadius: "50%",
-                            marginRight: "2px",
-                        }}
-                    ></div>
-                    <div
-                        style={{
-                            height: "10px",
-                            width: "10px",
-                            backgroundColor: "white",
-                            borderRadius: "50%",
-                            marginRight: "2px",
-                        }}
-                    ></div>
+                    {groupData.twitter_username && (
+                        <Card.Link
+                            href={
+                                "https://twitter.com/" +
+                                groupData.twitter_username
+                            }
+                            target="blank"
+                        >
+                            <RiTwitterLine style={iconStyle} />
+                        </Card.Link>
+                    )}
                 </div>
             </Card.Body>
         </Card>
