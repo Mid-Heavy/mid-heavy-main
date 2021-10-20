@@ -39,6 +39,7 @@ const tileLoginStyleLeft = {
     gridRowEnd: "span 1",
     textAlign: "center",
     alignSelf: "start",
+    whiteSpace: "nowrap",
 };
 
 const tileNameStyleLeft = {
@@ -49,6 +50,7 @@ const tileNameStyleLeft = {
     gridRowStart: "1",
     gridRowEnd: "span 1",
     textAlign: "right",
+    whiteSpace: "nowrap",
 };
 
 const tileBioStyleLeft = {
@@ -99,6 +101,7 @@ const tileLoginStyle = {
     gridRowEnd: "span 1",
     textAlign: "center",
     alignSelf: "start",
+    whiteSpace: "nowrap",
 };
 
 const tileNameStyle = {
@@ -109,6 +112,7 @@ const tileNameStyle = {
     gridRowStart: "1",
     gridRowEnd: "span 1",
     textAlign: "left",
+    whiteSpace: "nowrap",
 };
 
 const tileBioStyle = {
