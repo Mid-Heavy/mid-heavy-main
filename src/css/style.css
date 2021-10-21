@@ -360,6 +360,29 @@ textarea {
         height: 300px;
     }
     .profileTileLoginStyle {
+        font-size: 1.75rem;
+    }
+    .profileTileNameStyle {
+        font-size: 1.75rem;
+    }
+    .profileTileProfilePic {
+        height: 115px;
+        width: 115px;
+    }
+    .profileTileBioStyle {
+        font-size: 1.2rem;
+    }
+    .profileTileIconStyle {
+        height: 14px;
+        width: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    .profileTileCardStyle {
+        height: 300px;
+    }
+    .profileTileLoginStyle {
         font-size: 2rem;
     }
     .profileTileNameStyle {
