@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
 
 html {
-  height: 100%;
+    height: 100%;
 }
 body,
 div,
@@ -74,16 +74,16 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 body {
-  line-height: 1;
+    line-height: 1;
 }
 article,
 aside,
@@ -96,20 +96,20 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+    display: block;
 }
 nav ul {
-  list-style: none;
+    list-style: none;
 }
 blockquote,
 q {
-  quotes: none;
+    quotes: none;
 }
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: none;
+    content: none;
 }
 
 /* =============================================================================
@@ -120,117 +120,117 @@ q:after {
 
 html,
 body {
-  width: 100%;
-  height: 100%;
-  background: #111;
+    width: 100%;
+    height: 100%;
+    background: #111;
 }
 
 html {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
-  font: normal 75% Arial, Helvetica, sans-serif;
+    font: normal 75% Arial, Helvetica, sans-serif;
 }
 
 canvas {
-  display: block;
+    display: block;
 }
 
 .count-particles {
-  background: #000022;
-  position: fixed;
-  top: 48px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: #13e8e9;
-  font-size: 0.8em;
-  text-align: left;
-  text-indent: 4px;
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
+    background: #000022;
+    position: fixed;
+    top: 48px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #13e8e9;
+    font-size: 0.8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
 }
 
 .js-count-particles {
-  font-size: 1.1em;
+    font-size: 1.1em;
 }
 
 .count-particles {
-  border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
 }
 
 /* ---- particles.js container ---- */
 
 #particles-js {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: #202020;
-  /* background-image: url(""); */
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #202020;
+    /* background-image: url(""); */
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 }
 
 /* Main CSS  */
 
 .centered {
-  flex-direction: column;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+    flex-direction: column;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 #logo {
-  height: 20vh;
+    height: 20vh;
 }
 
 p {
-  margin-top: 0.25em;
-  color: #d6d6d6;
-  font-size: 23px;
-  font-family: "Rajdhani";
-  font-weight: 400;
-  text-align: center;
+    margin-top: 0.25em;
+    color: #d6d6d6;
+    font-size: 23px;
+    font-family: "Rajdhani";
+    font-weight: 400;
+    text-align: center;
 }
 
 :root {
-  --dark-bg: #202020;
+    --dark-bg: #202020;
 }
 
 body {
-  background-color: var(--dark-bg);
+    background-color: var(--dark-bg);
 }
 
 #title {
-  font-size: 3.5em;
-  font-family: rajdhani;
-  margin-top: 0;
-  color: #c4c4c4;
-  display: none;
+    font-size: 3.5em;
+    font-family: rajdhani;
+    margin-top: 0;
+    color: #c4c4c4;
+    display: none;
 }
 
 #mh-logo {
-  margin: auto;
-  position: relative;
-  display: block;
+    margin: auto;
+    position: relative;
+    display: block;
 }
 
 #logo-container {
-  margin-top: 5em;
-  background: var(--dark-bg);
-  text-align: center;
-  align-items: center;
+    margin-top: 5em;
+    background: var(--dark-bg);
+    text-align: center;
+    align-items: center;
 }
 
 /* Needs to be invisible at start up */
 #hPath {
-  display: none;
+    display: none;
 }
 
 /* =============================== contact page css ======================================= */
@@ -239,94 +239,141 @@ input[type="text"],
 input[type="email"],
 select,
 textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  margin-top: 6px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 16px;
-  resize: vertical;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    resize: vertical;
 }
 
 /* Create two columns that float next to eachother */
 .column {
-  float: left;
-  width: 50%;
-  margin-top: 6px;
-  padding: 20px;
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
 }
 
 @media screen and (max-width: 600px) {
-  .column,
-  input[type="submit"] {
-    width: 100%;
-    margin-top: 0;
-  }
+    .column,
+    input[type="submit"] {
+        width: 100%;
+        margin-top: 0;
+    }
 }
 /* about page */
 .aboutPage {
-  width: 100%;
-  height: 91%;
-  padding: 0;
-  overflow-y: scroll;
-  flex-direction: column;
-  scroll-snap-type: y mandatory;
-  position: absolute;
+    width: 100%;
+    height: 91%;
+    padding: 0;
+    overflow-y: scroll;
+    flex-direction: column;
+    scroll-snap-type: y mandatory;
+    position: absolute;
 }
 
 .aboutSection {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  scroll-snap-align: start;
-  z-index: 10;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    z-index: 10;
 }
 
 .aboutBox {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  height: 70%;
-  background-color: rgba(26, 26, 26, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 70%;
+    background-color: rgba(26, 26, 26, 0.7);
 }
 
 .aboutPage::-webkit-scrollbar {
-  width: 1em;
+    width: 1em;
 }
 
 .aboutPage::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 .aboutPage::-webkit-scrollbar-thumb {
-  background-color: rgb(85, 85, 85);
-  outline: none;
-  border-radius: 10px;
+    background-color: rgb(85, 85, 85);
+    outline: none;
+    border-radius: 10px;
 }
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+    width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #383838;
-  margin-top: 15px;
+    background: #383838;
+    margin-top: 15px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #111111;
+    background: #111111;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(32, 32, 32);
+    background: rgb(32, 32, 32);
 }
+
+/* This is for the profile tiles so they work on phones */
+@media (min-width: 400px) {
+    .profileTileCardStyle {
+        height: 200px;
+    }
+    .profileTileLoginStyle {
+        font-size: 1.5rem;
+    }
+    .profileTileNameStyle {
+        font-size: 1.5rem;
+    }
+    .profileTileProfilePic {
+        height: 100px;
+        width: 100px;
+    }
+    .profileTileBioStyle {
+        font-size: 0.85rem;
+    }
+    .profileTileIconStyle {
+        height: 12px;
+        width: 12px;
+    }
+}
+
+@media (min-width: 576px) {
+    .profileTileCardStyle {
+        height: 300px;
+    }
+    .profileTileLoginStyle {
+        font-size: 2rem;
+    }
+    .profileTileNameStyle {
+        font-size: 2rem;
+    }
+    .profileTileProfilePic {
+        height: 125px;
+        width: 125px;
+    }
+    .profileTileBioStyle {
+        font-size: 1.6rem;
+    }
+    .profileTileIconStyle {
+        height: 14px;
+        width: 14px;
+    }
+} ;
