@@ -5,6 +5,7 @@ import Background1 from "../assets/moodyTree.png";
 import Background2 from "../assets/redForest.jpg";
 import Background3 from "../assets/moodyGuitar.jpg";
 import Background4 from "../assets/bear.png";
+import TeamTile from "../components/TeamTile";
 
 export default function About() {
     const teamData = [
@@ -43,6 +44,7 @@ export default function About() {
 
     return (
         <Container style={{ position: "abosolute", overflow: "auto" }}>
+            <TeamTile profile={groupData} />
             <ProfileTile
                 imgPath={Background1}
                 isLeft={true}
