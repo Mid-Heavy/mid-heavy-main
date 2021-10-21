@@ -353,6 +353,10 @@ textarea {
         height: 12px;
         width: 12px;
     }
+    .navLinksWrapperInvisible {
+        width: 0;
+        margin-right: 0;
+    }
 }
 
 @media (min-width: 576px) {
@@ -376,6 +380,10 @@ textarea {
         height: 14px;
         width: 14px;
     }
+    .navLinksWrapperInvisible {
+        width: 120px;
+        margin-right: auto;
+    }
 }
 
 @media (min-width: 768px) {
@@ -398,5 +406,9 @@ textarea {
     .profileTileIconStyle {
         height: 14px;
         width: 14px;
+    }
+    .navLinksWrapperInvisible {
+        width: 120px;
+        margin-right: auto;
     }
 } ;
