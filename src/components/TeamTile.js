@@ -5,7 +5,6 @@ const bodyStyle = {
     margin: "0",
     display: "grid",
     gridTemplateColumns: "1fr 1fr 1fr 1fr",
-    gridTemplateRows: "60px auto auto",
     zIndex: "3",
     paddingBottom: "5px",
 };
@@ -56,7 +55,7 @@ export default function TeamTile(props) {
                 border: "0px none",
             }}
         >
-            <Card.Body style={bodyStyle}>
+            <Card.Body className="teamTileBodyStyle" style={bodyStyle}>
                 <Card.Title
                     className="teamTileTitleStyle"
                     style={teamTileTitleStyle}

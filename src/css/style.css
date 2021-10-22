@@ -360,6 +360,9 @@ textarea {
     .teamTileCardStyle {
         height: 200px;
     }
+    .teamTileBodyStyle {
+        grid-template-rows: 60px auto 40px;
+    }
     .teamTileTitleStyle {
         font-size: 1.5rem;
     }
@@ -400,6 +403,9 @@ textarea {
     .teamTileCardStyle {
         height: 300px;
     }
+    .teamTileBodyStyle {
+        grid-template-rows: 60px auto 50px;
+    }
     .teamTileTitleStyle {
         font-size: 1.75rem;
     }
@@ -439,6 +445,9 @@ textarea {
     }
     .teamTileCardStyle {
         height: 300px;
+    }
+    .teamTileBodyStyle {
+        grid-template-rows: 60px auto 50px;
     }
     .teamTileTitleStyle {
         font-size: 2rem;
