@@ -39,24 +39,25 @@ export default function About() {
             bio: "Mac",
         },
     ];
+    const background = [Background1, Background2, Background3, Background4];
 
     const [groupData, setGroupData] = useState(teamData);
 
     return (
         <Container style={{ position: "abosolute", overflow: "auto" }}>
-            <TeamTile profile={groupData} />
+            <TeamTile imgPath={background} profile={groupData} />
             <ProfileTile
-                imgPath={Background1}
+                imgPath={background[0]}
                 isLeft={true}
                 profile={groupData[2]}
             />
-            <ProfileTile imgPath={Background2} profile={groupData[1]} />
+            <ProfileTile imgPath={background[1]} profile={groupData[1]} />
             <ProfileTile
-                imgPath={Background3}
+                imgPath={background[2]}
                 isLeft={true}
                 profile={groupData[3]}
             />
-            <ProfileTile imgPath={Background4} profile={groupData[0]} />
+            <ProfileTile imgPath={background[3]} profile={groupData[0]} />
         </Container>
     );
 }

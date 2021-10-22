@@ -34,8 +34,8 @@ const teamTileBioStyle = {
 export default function TeamTile(props) {
     const groupData = props.profile;
 
-    console.log(groupData);
     const background = props.imgPath;
+    console.log(background);
 
     return (
         <Card
@@ -49,7 +49,6 @@ export default function TeamTile(props) {
                 marginRight: "auto",
                 marginLeft: "auto",
                 padding: "0",
-                backgroundImage: "url(" + background + ")",
                 backgroundSize: "cover",
                 backgroundColor: "rgba(26, 26, 26, 0.7)",
                 border: "0px none",
@@ -78,6 +77,8 @@ export default function TeamTile(props) {
                         gridRowEnd: "span 1",
                         textAlign: "center",
                         alignSelf: "center",
+                        backgroundImage: "url(" + background[3] + ")",
+                        backgroundSize: "cover",
                     }}
                 >
                     {/* {groupData[0].name} */} Christopher
@@ -91,6 +92,8 @@ export default function TeamTile(props) {
                         gridRowEnd: "span 1",
                         textAlign: "center",
                         alignSelf: "center",
+                        backgroundImage: "url(" + background[1] + ")",
+                        backgroundSize: "cover",
                     }}
                 >
                     {groupData[1].name}
@@ -104,6 +107,8 @@ export default function TeamTile(props) {
                         gridRowEnd: "span 1",
                         textAlign: "center",
                         alignSelf: "center",
+                        backgroundImage: "url(" + background[0] + ")",
+                        backgroundSize: "cover",
                     }}
                 >
                     {groupData[2].name}
@@ -117,6 +122,8 @@ export default function TeamTile(props) {
                         gridRowEnd: "span 1",
                         textAlign: "center",
                         alignSelf: "center",
+                        backgroundImage: "url(" + background[2] + ")",
+                        backgroundSize: "cover",
                     }}
                 >
                     {groupData[3].name}

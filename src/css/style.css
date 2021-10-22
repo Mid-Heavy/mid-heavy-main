@@ -331,6 +331,16 @@ textarea {
     background: rgb(32, 32, 32);
 }
 
+/* Making the on hover effect for the team tiles */
+.teamTileNameLinks {
+    background-image: none !important;
+}
+
+.teamTitleNameLinks:hover {
+    background-image: initial;
+    color: black;
+}
+
 /* This is for the profile tiles, team tile, and navbar so they work on phones */
 @media (min-width: 400px) {
     .profileTileCardStyle {
