@@ -5,38 +5,32 @@ const bodyStyle = {
     margin: "0",
     display: "grid",
     gridTemplateColumns: "1fr 1fr 1fr 1fr",
-    gridTemplateRows: "1fr 1fr 1fr auto 10px",
+    gridTemplateRows: "60px auto auto",
     zIndex: "3",
+    paddingBottom: "5px",
 };
 
 const teamTileTitleStyle = {
     fontWeight: "bold",
-    gridColumnStart: "4",
-    gridColumnEnd: "span 1",
-    gridRowStart: "3",
+    letterSpacing: "0.25em",
+    gridColumnStart: "1",
+    gridColumnEnd: "span 3",
+    gridRowStart: "1",
     gridRowEnd: "span 1",
-    textAlign: "center",
+    textAlign: "left",
     alignSelf: "start",
     whiteSpace: "nowrap",
 };
 
 const teamTileBioStyle = {
     gridColumnStart: "1",
-    gridColumnEnd: "span 3",
+    gridColumnEnd: "span 4",
     gridRowStart: "2",
-    gridRowEnd: "span 3",
+    gridRowEnd: "span 1",
     textAlign: "left",
     margin: "0",
+    borderBottom: "solid 1px white",
 };
-
-/// TEMPLATE DATA OBJECT
-// const TEMP_PROFILE_DATA = {
-//   login: "Pandaphobic",
-//   avatar_url: "https://avatars.githubusercontent.com/u/11794877?v=4",
-//   html_url: "https://github.com/Pandaphobic",
-//   name: "Christopher Steffes",
-//   bio: "Beginner Programmer & Electronics Hobbyist",
-// };
 
 export default function TeamTile(props) {
     const groupData = props.profile;
@@ -73,8 +67,61 @@ export default function TeamTile(props) {
                     className="teamTileBioStyle"
                     style={teamTileBioStyle}
                 >
-                    {groupData[0].bio}
+                    Mid Heavy is a team of tech enthusiasts, passionate about
+                    making cool projects, and learning along the way!
                 </Card.Text>
+                <Card.Link
+                    className="teamTileNameLinks"
+                    style={{
+                        gridColumnStart: "1",
+                        gridColumnEnd: "span 1",
+                        gridRowStart: "3",
+                        gridRowEnd: "span 1",
+                        textAlign: "center",
+                        alignSelf: "center",
+                    }}
+                >
+                    {/* {groupData[0].name} */} Christopher
+                </Card.Link>
+                <Card.Link
+                    className="teamTileNameLinks"
+                    style={{
+                        gridColumnStart: "2",
+                        gridColumnEnd: "span 1",
+                        gridRowStart: "3",
+                        gridRowEnd: "span 1",
+                        textAlign: "center",
+                        alignSelf: "center",
+                    }}
+                >
+                    {groupData[1].name}
+                </Card.Link>
+                <Card.Link
+                    className="teamTileNameLinks"
+                    style={{
+                        gridColumnStart: "3",
+                        gridColumnEnd: "span 1",
+                        gridRowStart: "3",
+                        gridRowEnd: "span 1",
+                        textAlign: "center",
+                        alignSelf: "center",
+                    }}
+                >
+                    {groupData[2].name}
+                </Card.Link>
+                <Card.Link
+                    className="teamTileNameLinks"
+                    style={{
+                        gridColumnStart: "4",
+                        gridColumnEnd: "span 1",
+                        gridRowStart: "3",
+                        gridRowEnd: "span 1",
+                        textAlign: "center",
+                        alignSelf: "center",
+                    }}
+                >
+                    {groupData[3].name}
+                </Card.Link>
             </Card.Body>
         </Card>
     );

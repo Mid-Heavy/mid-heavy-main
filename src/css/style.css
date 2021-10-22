@@ -331,7 +331,7 @@ textarea {
     background: rgb(32, 32, 32);
 }
 
-/* This is for the profile tiles so they work on phones */
+/* This is for the profile tiles, team tile, and navbar so they work on phones */
 @media (min-width: 400px) {
     .profileTileCardStyle {
         height: 200px;
@@ -356,6 +356,19 @@ textarea {
     .navLinksWrapperInvisible {
         width: 0;
         margin-right: 0;
+    }
+    .teamTileCardStyle {
+        height: 200px;
+    }
+    .teamTileTitleStyle {
+        font-size: 1.5rem;
+    }
+    .teamTileBioStyle {
+        font-size: 0.75rem;
+    }
+    .teamTileNameLinks {
+        font-size: 0.8rem;
+        line-height: 40px;
     }
 }
 
@@ -384,6 +397,19 @@ textarea {
         width: 120px;
         margin-right: auto;
     }
+    .teamTileCardStyle {
+        height: 300px;
+    }
+    .teamTileTitleStyle {
+        font-size: 1.75rem;
+    }
+    .teamTileBioStyle {
+        font-size: 1.1rem;
+    }
+    .teamTileNameLinks {
+        font-size: 1.3rem;
+        line-height: 50px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -410,5 +436,18 @@ textarea {
     .navLinksWrapperInvisible {
         width: 120px;
         margin-right: auto;
+    }
+    .teamTileCardStyle {
+        height: 300px;
+    }
+    .teamTileTitleStyle {
+        font-size: 2rem;
+    }
+    .teamTileBioStyle {
+        font-size: 1.25rem;
+    }
+    .teamTileNameLinks {
+        font-size: 1.5rem;
+        line-height: 50px;
     }
 } ;
