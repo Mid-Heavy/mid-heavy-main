@@ -69,6 +69,7 @@ export default function TeamTile(props) {
                     making cool projects, and learning along the way!
                 </Card.Text>
                 <Card.Link
+                    href=""
                     className="teamTileNameLinks"
                     style={{
                         gridColumnStart: "1",
@@ -79,11 +80,13 @@ export default function TeamTile(props) {
                         alignSelf: "center",
                         backgroundImage: "url(" + background[3] + ")",
                         backgroundSize: "cover",
+                        color: "white",
                     }}
                 >
                     {/* {groupData[0].name} */} Christopher
                 </Card.Link>
                 <Card.Link
+                    href=""
                     className="teamTileNameLinks"
                     style={{
                         gridColumnStart: "2",
@@ -94,11 +97,14 @@ export default function TeamTile(props) {
                         alignSelf: "center",
                         backgroundImage: "url(" + background[1] + ")",
                         backgroundSize: "cover",
+                        color: "white",
                     }}
                 >
                     {groupData[1].name}
                 </Card.Link>
+
                 <Card.Link
+                    href=""
                     className="teamTileNameLinks"
                     style={{
                         gridColumnStart: "3",
@@ -109,11 +115,13 @@ export default function TeamTile(props) {
                         alignSelf: "center",
                         backgroundImage: "url(" + background[0] + ")",
                         backgroundSize: "cover",
+                        color: "white",
                     }}
                 >
                     {groupData[2].name}
                 </Card.Link>
                 <Card.Link
+                    href=""
                     className="teamTileNameLinks"
                     style={{
                         gridColumnStart: "4",
@@ -124,6 +132,7 @@ export default function TeamTile(props) {
                         alignSelf: "center",
                         backgroundImage: "url(" + background[2] + ")",
                         backgroundSize: "cover",
+                        color: "white",
                     }}
                 >
                     {groupData[3].name}
