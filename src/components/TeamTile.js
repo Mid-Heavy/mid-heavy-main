@@ -14,8 +14,6 @@ const teamTileTitleStyle = {
     letterSpacing: "0.25em",
     gridColumnStart: "1",
     gridColumnEnd: "span 3",
-    gridRowStart: "1",
-    gridRowEnd: "span 1",
     textAlign: "left",
     alignSelf: "start",
     whiteSpace: "nowrap",
@@ -24,8 +22,6 @@ const teamTileTitleStyle = {
 const teamTileBioStyle = {
     gridColumnStart: "1",
     gridColumnEnd: "span 4",
-    gridRowStart: "2",
-    gridRowEnd: "span 1",
     textAlign: "left",
     margin: "0",
     borderBottom: "solid 1px white",
@@ -92,8 +88,6 @@ export default function TeamTile(props) {
                     style={{
                         gridColumnStart: "1",
                         gridColumnEnd: "span 1",
-                        gridRowStart: "3",
-                        gridRowEnd: "span 1",
                         textAlign: "center",
                         alignSelf: "center",
                         // backgroundImage: "url(" + background[3] + ")",
@@ -111,8 +105,6 @@ export default function TeamTile(props) {
                     style={{
                         gridColumnStart: "2",
                         gridColumnEnd: "span 1",
-                        gridRowStart: "3",
-                        gridRowEnd: "span 1",
                         textAlign: "center",
                         alignSelf: "center",
                         // backgroundImage: "url(" + background[1] + ")",
@@ -131,8 +123,6 @@ export default function TeamTile(props) {
                     style={{
                         gridColumnStart: "3",
                         gridColumnEnd: "span 1",
-                        gridRowStart: "3",
-                        gridRowEnd: "span 1",
                         textAlign: "center",
                         alignSelf: "center",
                         // backgroundImage: "url(" + background[0] + ")",
@@ -150,8 +140,6 @@ export default function TeamTile(props) {
                     style={{
                         gridColumnStart: "4",
                         gridColumnEnd: "span 1",
-                        gridRowStart: "3",
-                        gridRowEnd: "span 1",
                         textAlign: "center",
                         alignSelf: "center",
                         // backgroundImage: "url(" + background[2] + ")",
