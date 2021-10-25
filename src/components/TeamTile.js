@@ -37,6 +37,22 @@ export default function TeamTile(props) {
     const background = props.imgPath;
     console.log(background);
 
+    function MouseOver0(event) {
+        event.target.style.backgroundImage = ["url(" + background[0] + ")"];
+    }
+    function MouseOver1(event) {
+        event.target.style.backgroundImage = ["url(" + background[1] + ")"];
+    }
+    function MouseOver2(event) {
+        event.target.style.backgroundImage = ["url(" + background[2] + ")"];
+    }
+    function MouseOver3(event) {
+        event.target.style.backgroundImage = ["url(" + background[3] + ")"];
+    }
+    function MouseOut(event) {
+        event.target.style.backgroundImage = "";
+    }
+
     return (
         <Card
             className="teamTileCardStyle"
@@ -71,6 +87,8 @@ export default function TeamTile(props) {
                 <Card.Link
                     href=""
                     className="teamTileNameLinks"
+                    onMouseOver={MouseOver3}
+                    onMouseOut={MouseOut}
                     style={{
                         gridColumnStart: "1",
                         gridColumnEnd: "span 1",
@@ -78,7 +96,7 @@ export default function TeamTile(props) {
                         gridRowEnd: "span 1",
                         textAlign: "center",
                         alignSelf: "center",
-                        backgroundImage: "url(" + background[3] + ")",
+                        // backgroundImage: "url(" + background[3] + ")",
                         backgroundSize: "cover",
                         color: "white",
                     }}
@@ -88,6 +106,8 @@ export default function TeamTile(props) {
                 <Card.Link
                     href=""
                     className="teamTileNameLinks"
+                    onMouseOver={MouseOver1}
+                    onMouseOut={MouseOut}
                     style={{
                         gridColumnStart: "2",
                         gridColumnEnd: "span 1",
@@ -95,7 +115,7 @@ export default function TeamTile(props) {
                         gridRowEnd: "span 1",
                         textAlign: "center",
                         alignSelf: "center",
-                        backgroundImage: "url(" + background[1] + ")",
+                        // backgroundImage: "url(" + background[1] + ")",
                         backgroundSize: "cover",
                         color: "white",
                     }}
@@ -106,6 +126,8 @@ export default function TeamTile(props) {
                 <Card.Link
                     href=""
                     className="teamTileNameLinks"
+                    onMouseOver={MouseOver0}
+                    onMouseOut={MouseOut}
                     style={{
                         gridColumnStart: "3",
                         gridColumnEnd: "span 1",
@@ -113,7 +135,7 @@ export default function TeamTile(props) {
                         gridRowEnd: "span 1",
                         textAlign: "center",
                         alignSelf: "center",
-                        backgroundImage: "url(" + background[0] + ")",
+                        // backgroundImage: "url(" + background[0] + ")",
                         backgroundSize: "cover",
                         color: "white",
                     }}
@@ -123,6 +145,8 @@ export default function TeamTile(props) {
                 <Card.Link
                     href=""
                     className="teamTileNameLinks"
+                    onMouseOver={MouseOver2}
+                    onMouseOut={MouseOut}
                     style={{
                         gridColumnStart: "4",
                         gridColumnEnd: "span 1",
@@ -130,7 +154,7 @@ export default function TeamTile(props) {
                         gridRowEnd: "span 1",
                         textAlign: "center",
                         alignSelf: "center",
-                        backgroundImage: "url(" + background[2] + ")",
+                        // backgroundImage: "url(" + background[2] + ")",
                         backgroundSize: "cover",
                         color: "white",
                     }}
