@@ -101,7 +101,7 @@ export default function TeamTile(props) {
                         color: "white",
                     }}
                 >
-                    {/* {groupData[0].name} */} Christopher
+                    {groupData[0].name.split(" ")[0]}
                 </Card.Link>
                 <Card.Link
                     href=""
@@ -120,7 +120,7 @@ export default function TeamTile(props) {
                         color: "white",
                     }}
                 >
-                    {groupData[1].name}
+                    {groupData[1].name.split(" ")[0]}
                 </Card.Link>
 
                 <Card.Link
@@ -140,7 +140,7 @@ export default function TeamTile(props) {
                         color: "white",
                     }}
                 >
-                    {groupData[2].name}
+                    {groupData[2].name.split(" ")[0]}
                 </Card.Link>
                 <Card.Link
                     href=""
@@ -159,7 +159,7 @@ export default function TeamTile(props) {
                         color: "white",
                     }}
                 >
-                    {groupData[3].name}
+                    {groupData[3].name.split(" ")[0]}
                 </Card.Link>
             </Card.Body>
         </Card>
