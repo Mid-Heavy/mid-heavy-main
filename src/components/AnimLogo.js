@@ -5,6 +5,7 @@ import logo from "../assets/logo.svg";
 export default function AnimLogo() {
   return (
     <Container fluid>
+
       <img
         alt="mh-logo"
         id="logo-svg"
@@ -12,6 +13,7 @@ export default function AnimLogo() {
         style={{ marginTop: "5em", overflow: "", height: "35vh" }}
         src={logo}
       />
+
     </Container>
   );
 }
