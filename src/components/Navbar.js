@@ -12,7 +12,6 @@ const navbarStyle = {
     position: "sticky",
     top: "0",
     width: "100%",
-    height: "35px",
     zIndex: "100",
 };
 
@@ -57,7 +56,7 @@ const navLinkTextStyle = {
 
 export default function Navbar() {
     return (
-        <Nav className="justify-content-center" style={navbarStyle}>
+        <Nav className="justify-content-center navbarStyle" style={navbarStyle}>
             <div
                 className="navLinksWrapperInvisible"
                 style={navLinksWrapperInvisible}
@@ -68,13 +67,21 @@ export default function Navbar() {
                 as={Link}
                 to="/home"
                 style={navLinkTextStyle}
+                className="navLinkTextStyle"
             >
                 MidHeavy.Tech
             </Nav.Link>
 
-            <p style={navLinkTextStyle}> | </p>
+            <p style={navLinkTextStyle} className="navLinkTextStyle">
+                {" "}
+                |{" "}
+            </p>
 
-            <Nav.Link href="" style={navLinkTextStyle}>
+            <Nav.Link
+                href=""
+                style={navLinkTextStyle}
+                className="navLinkTextStyle"
+            >
                 Blog
             </Nav.Link>
 
@@ -83,6 +90,7 @@ export default function Navbar() {
                 as={Link}
                 to="/about"
                 style={navLinkTextStyle}
+                className="navLinkTextStyle"
             >
                 Team
             </Nav.Link>
@@ -92,6 +100,7 @@ export default function Navbar() {
                 as={Link}
                 to="/contact"
                 style={navLinkTextStyle}
+                className="navLinkTextStyle"
             >
                 Contact
             </Nav.Link>

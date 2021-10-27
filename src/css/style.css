@@ -340,6 +340,99 @@ textarea {
 /* a.teamTileNameLinks:hover {} */
 
 /* This is for the profile tiles, team tile, and navbar so they work on phones */
+@media (max-width: 200px) {
+    .profileTileCardStyle {
+        height: 200px;
+    }
+    .profileTileLoginStyle {
+        font-size: 0.8rem;
+    }
+    .profileTileNameStyle {
+        font-size: 0.8rem;
+    }
+    .profileTileProfilePic {
+        height: 50px;
+        width: 50px;
+    }
+    .profileTileBioStyle {
+        font-size: 0.6rem;
+    }
+    .profileTileIconStyle {
+        height: 10px;
+        width: 10px;
+    }
+    .navLinksWrapperInvisible {
+        width: 0;
+        margin-right: 0;
+    }
+    .navbarStyle {
+        height: 70px;
+    }
+    .navLinkTextStyle {
+        font-size: 0.75rem;
+    }
+    .teamTileCardStyle {
+        height: 200px;
+    }
+    .teamTileBodyStyle {
+        grid-template-rows: 60px auto 40px;
+    }
+    .teamTileTitleStyle {
+        font-size: 0.8rem;
+    }
+    .teamTileBioStyle {
+        font-size: 0.75rem;
+    }
+    .teamTileNameLinks {
+        font-size: 0.8rem;
+        line-height: 40px;
+    }
+}
+@media (max-width: 400px) {
+    .profileTileCardStyle {
+        height: 200px;
+    }
+    .profileTileLoginStyle {
+        font-size: 0.8rem;
+    }
+    .profileTileNameStyle {
+        font-size: 0.8rem;
+    }
+    .profileTileProfilePic {
+        height: 50px;
+        width: 50px;
+    }
+    .profileTileBioStyle {
+        font-size: 0.6rem;
+    }
+    .profileTileIconStyle {
+        height: 10px;
+        width: 10px;
+    }
+    .navLinksWrapperInvisible {
+        width: 0;
+        margin-right: 0;
+    }
+    .navbarStyle {
+        height: 70px;
+    }
+    .teamTileCardStyle {
+        height: 200px;
+    }
+    .teamTileBodyStyle {
+        grid-template-rows: 60px auto 40px;
+    }
+    .teamTileTitleStyle {
+        font-size: 0.8rem;
+    }
+    .teamTileBioStyle {
+        font-size: 0.75rem;
+    }
+    .teamTileNameLinks {
+        font-size: 0.8rem;
+        line-height: 40px;
+    }
+}
 @media (min-width: 400px) {
     .profileTileCardStyle {
         height: 200px;
@@ -364,6 +457,9 @@ textarea {
     .navLinksWrapperInvisible {
         width: 0;
         margin-right: 0;
+    }
+    .navbarStyle {
+        height: 35px;
     }
     .teamTileCardStyle {
         height: 200px;
@@ -408,6 +504,9 @@ textarea {
         width: 120px;
         margin-right: auto;
     }
+    .navbarStyle {
+        height: 35px;
+    }
     .teamTileCardStyle {
         height: 300px;
     }
@@ -451,6 +550,10 @@ textarea {
         width: 120px;
         margin-right: auto;
     }
+    .navbarStyle {
+        height: 35px;
+    }
+
     .teamTileCardStyle {
         height: 300px;
     }
