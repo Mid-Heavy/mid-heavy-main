@@ -341,25 +341,28 @@ textarea {
 
 /* This is for the profile tiles, team tile, and navbar so they work on phones */
 @media (max-width: 200px) {
+    .card-body {
+        padding: 8px;
+    }
     .profileTileCardStyle {
-        height: 200px;
+        height: 110px;
     }
     .profileTileLoginStyle {
-        font-size: 0.8rem;
-    }
-    .profileTileNameStyle {
-        font-size: 0.8rem;
-    }
-    .profileTileProfilePic {
-        height: 50px;
-        width: 50px;
-    }
-    .profileTileBioStyle {
         font-size: 0.6rem;
     }
+    .profileTileNameStyle {
+        font-size: 0.6rem;
+    }
+    .profileTileProfilePic {
+        height: 40px;
+        width: 40px;
+    }
+    .profileTileBioStyle {
+        font-size: 0.4rem;
+    }
     .profileTileIconStyle {
-        height: 10px;
-        width: 10px;
+        height: 7px;
+        width: 7px;
     }
     .navLinksWrapperInvisible {
         width: 0;
@@ -371,43 +374,50 @@ textarea {
     .navLinkTextStyle {
         font-size: 0.75rem;
     }
+    .navIconStyle {
+        height: 11px;
+        width: 11px;
+    }
     .teamTileCardStyle {
-        height: 200px;
+        height: 110px;
     }
     .teamTileBodyStyle {
-        grid-template-rows: 60px auto 40px;
+        grid-template-rows: 30px auto 30px;
     }
     .teamTileTitleStyle {
-        font-size: 0.8rem;
-    }
-    .teamTileBioStyle {
-        font-size: 0.75rem;
-    }
-    .teamTileNameLinks {
-        font-size: 0.8rem;
-        line-height: 40px;
-    }
-}
-@media (max-width: 400px) {
-    .profileTileCardStyle {
-        height: 200px;
-    }
-    .profileTileLoginStyle {
-        font-size: 0.8rem;
-    }
-    .profileTileNameStyle {
-        font-size: 0.8rem;
-    }
-    .profileTileProfilePic {
-        height: 50px;
-        width: 50px;
-    }
-    .profileTileBioStyle {
         font-size: 0.6rem;
     }
+    .teamTileBioStyle {
+        font-size: 0.4rem;
+    }
+    .teamTileNameLinks {
+        font-size: 0.3rem;
+        line-height: 30px;
+    }
+}
+@media (min-width: 200px) {
+    .card-body {
+        padding: 10px;
+    }
+    .profileTileCardStyle {
+        height: 120px;
+    }
+    .profileTileLoginStyle {
+        font-size: 0.6rem;
+    }
+    .profileTileNameStyle {
+        font-size: 0.6rem;
+    }
+    .profileTileProfilePic {
+        height: 40px;
+        width: 40px;
+    }
+    .profileTileBioStyle {
+        font-size: 0.4rem;
+    }
     .profileTileIconStyle {
-        height: 10px;
-        width: 10px;
+        height: 7px;
+        width: 7px;
     }
     .navLinksWrapperInvisible {
         width: 0;
@@ -416,21 +426,82 @@ textarea {
     .navbarStyle {
         height: 70px;
     }
+    .navLinkTextStyle {
+        font-size: 0.8rem;
+    }
+    .navIconStyle {
+        height: 12px;
+        width: 12px;
+    }
     .teamTileCardStyle {
-        height: 200px;
+        height: 120px;
     }
     .teamTileBodyStyle {
-        grid-template-rows: 60px auto 40px;
+        grid-template-rows: 30px auto 30px;
+    }
+    .teamTileTitleStyle {
+        font-size: 0.6rem;
+    }
+    .teamTileBioStyle {
+        font-size: 0.4rem;
+    }
+    .teamTileNameLinks {
+        font-size: 0.35rem;
+        line-height: 30px;
+    }
+}
+@media (min-width: 300px) {
+    .profileTileCardStyle {
+        height: 150px;
+    }
+    .profileTileLoginStyle {
+        font-size: 0.8rem;
+    }
+    .profileTileNameStyle {
+        font-size: 0.8rem;
+    }
+    .profileTileProfilePic {
+        height: 60px;
+        width: 60px;
+    }
+    .profileTileBioStyle {
+        font-size: 0.6rem;
+    }
+    .profileTileIconStyle {
+        height: 8px;
+        width: 8px;
+    }
+    .navLinksWrapperInvisible {
+        width: 0;
+        margin-right: 0;
+    }
+    .navbarStyle {
+        height: 70px;
+    }
+    .navIconStyle {
+        height: 15px;
+        width: 15px;
+    }
+    .teamTileCardStyle {
+        height: 150px;
+    }
+    .teamTileBodyStyle {
+        grid-template-rows: 35px auto 30px;
     }
     .teamTileTitleStyle {
         font-size: 0.8rem;
     }
     .teamTileBioStyle {
-        font-size: 0.75rem;
+        font-size: 0.6rem;
     }
     .teamTileNameLinks {
-        font-size: 0.8rem;
-        line-height: 40px;
+        font-size: 0.7rem;
+        line-height: 30px;
+    }
+}
+@media (min-width: 350px) {
+    .navbarStyle {
+        height: 35px;
     }
 }
 @media (min-width: 400px) {
@@ -460,6 +531,10 @@ textarea {
     }
     .navbarStyle {
         height: 35px;
+    }
+    .navIconStyle {
+        height: 15px;
+        width: 15px;
     }
     .teamTileCardStyle {
         height: 200px;
@@ -507,6 +582,10 @@ textarea {
     .navbarStyle {
         height: 35px;
     }
+    .navIconStyle {
+        height: 15px;
+        width: 15px;
+    }
     .teamTileCardStyle {
         height: 300px;
     }
@@ -553,7 +632,10 @@ textarea {
     .navbarStyle {
         height: 35px;
     }
-
+    .navIconStyle {
+        height: 15px;
+        width: 15px;
+    }
     .teamTileCardStyle {
         height: 300px;
     }

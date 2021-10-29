@@ -30,8 +30,6 @@ const navLinksWrapperInvisible = {
 
 const iconStyle = {
     color: "#b6b6b6",
-    height: "15px",
-    width: "15px",
 };
 
 const navLinkStyle = {
@@ -111,7 +109,7 @@ export default function Navbar() {
                     target="blank"
                     style={navLinkStyle}
                 >
-                    <RiGithubLine style={iconStyle} />
+                    <RiGithubLine className="navIconStyle" style={iconStyle} />
                 </Nav.Link>
 
                 <Nav.Link
@@ -119,7 +117,7 @@ export default function Navbar() {
                     target="blank"
                     style={navLinkStyle}
                 >
-                    <RiTwitterLine style={iconStyle} />
+                    <RiTwitterLine className="navIconStyle" style={iconStyle} />
                 </Nav.Link>
 
                 <Nav.Link
@@ -127,7 +125,7 @@ export default function Navbar() {
                     target="blank"
                     style={navLinkStyle}
                 >
-                    <RiDiscordLine style={iconStyle} />
+                    <RiDiscordLine className="navIconStyle" style={iconStyle} />
                 </Nav.Link>
             </div>
         </Nav>
