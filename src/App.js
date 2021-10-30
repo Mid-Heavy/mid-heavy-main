@@ -1,12 +1,12 @@
-import "./App.css";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Contact from "./pages/Contact";
-import PageNotFound from "./pages/PageNotFound";
-import ParticlesBackground from "./components/ParticlesBackground";
-import { Container, Jumbotron } from "react-bootstrap";
+import "./App.css"
+import Home from "./pages/Home"
+import Team from "./pages/Team"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import Navbar from "./components/Navbar"
+import Contact from "./pages/Contact"
+import PageNotFound from "./pages/PageNotFound"
+import ParticlesBackground from "./components/ParticlesBackground"
+import { Container, Jumbotron } from "react-bootstrap"
 
 function App() {
   return (
@@ -18,8 +18,8 @@ function App() {
             <Route exact path={["/home", "/", ""]}>
               <Home />
             </Route>
-            <Route exact path={"/about"}>
-              <About style={{ position: "relative" }} />
+            <Route exact path={"/team"}>
+              <Team style={{ position: "relative" }} />
             </Route>
             <Route exact path={"/contact"}>
               <Contact />
@@ -32,7 +32,7 @@ function App() {
       </Router>
       <ParticlesBackground />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

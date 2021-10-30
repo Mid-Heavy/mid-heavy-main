@@ -1,9 +1,9 @@
-import React from "react";
-import Nav from "react-bootstrap/Nav";
-import { RiTwitterLine } from "react-icons/ri";
-import { RiGithubLine } from "react-icons/ri";
-import { RiDiscordLine } from "react-icons/ri";
-import { Link } from "react-router-dom";
+import React from "react"
+import Nav from "react-bootstrap/Nav"
+import { RiTwitterLine } from "react-icons/ri"
+import { RiGithubLine } from "react-icons/ri"
+import { RiDiscordLine } from "react-icons/ri"
+import { Link } from "react-router-dom"
 
 const navbarStyle = {
     fontFamily: "Rajdhani",
@@ -15,22 +15,24 @@ const navbarStyle = {
     zIndex: "100",
 };
 
+
 const navLinksWrapper = {
-    display: "flex",
-    flexDirection: "row",
-    marginLeft: "auto",
-    width: "120px",
-};
+  display: "flex",
+  flexDirection: "row",
+  marginLeft: "auto",
+  width: "120px"
+}
 
 const navLinksWrapperInvisible = {
-    display: "flex",
-    flexDirection: "row",
-    visibility: "hidden",
-};
+  display: "flex",
+  flexDirection: "row",
+  visibility: "hidden"
+}
 
 const iconStyle = {
     color: "#b6b6b6",
 };
+
 
 const navLinkStyle = {
     height: "35px",
@@ -52,6 +54,7 @@ const navLinkTextStyle = {
     lineHeight: "35px",
 };
 
+
 export default function Navbar() {
     return (
         <Nav className="justify-content-center navbarStyle" style={navbarStyle}>
@@ -71,8 +74,7 @@ export default function Navbar() {
             </Nav.Link>
 
             <p style={navLinkTextStyle} className="navLinkTextStyle">
-                {" "}
-                |{" "}
+                |
             </p>
 
             <Nav.Link
@@ -130,4 +132,5 @@ export default function Navbar() {
             </div>
         </Nav>
     );
+
 }
