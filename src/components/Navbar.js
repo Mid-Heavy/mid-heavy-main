@@ -33,7 +33,7 @@ const iconStyle = {
 };
 
 const navLinkStyle = {
-    height: "40px",
+    height: "35px",
     width: "40px",
     padding: "0px",
     margin: "0px",
@@ -42,14 +42,14 @@ const navLinkStyle = {
 
 const navLinkTextStyle = {
     color: "#b6b6b6",
-    height: "40px",
+    height: "35px",
     width: "auto",
     paddingLeft: "6px",
     paddingRight: "6px",
     paddingTop: "0px",
     paddingBottom: "0px",
     margin: "0px",
-    lineHeight: "40px",
+    lineHeight: "35px",
 };
 
 export default function Navbar() {
