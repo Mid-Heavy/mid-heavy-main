@@ -35,24 +35,25 @@ const iconStyle = {
 
 
 const navLinkStyle = {
-  height: "40px",
-  width: "40px",
-  padding: "0px",
-  margin: "0px",
-  lineHeight: "40px"
-}
+    height: "35px",
+    width: "40px",
+    padding: "0px",
+    margin: "0px",
+    lineHeight: "40px",
+};
 
 const navLinkTextStyle = {
-  color: "#b6b6b6",
-  height: "40px",
-  width: "auto",
-  paddingLeft: "6px",
-  paddingRight: "6px",
-  paddingTop: "0px",
-  paddingBottom: "0px",
-  margin: "0px",
-  lineHeight: "40px"
-}
+    color: "#b6b6b6",
+    height: "35px",
+    width: "auto",
+    paddingLeft: "6px",
+    paddingRight: "6px",
+    paddingTop: "0px",
+    paddingBottom: "0px",
+    margin: "0px",
+    lineHeight: "35px",
+};
+
 
 export default function Navbar() {
     return (
