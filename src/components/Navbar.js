@@ -1,9 +1,9 @@
-import React from "react";
-import Nav from "react-bootstrap/Nav";
-import { RiTwitterLine } from "react-icons/ri";
-import { RiGithubLine } from "react-icons/ri";
-import { RiDiscordLine } from "react-icons/ri";
-import { Link } from "react-router-dom";
+import React from "react"
+import Nav from "react-bootstrap/Nav"
+import { RiTwitterLine } from "react-icons/ri"
+import { RiGithubLine } from "react-icons/ri"
+import { RiDiscordLine } from "react-icons/ri"
+import { Link } from "react-router-dom"
 
 const navbarStyle = {
     fontFamily: "Rajdhani",
@@ -15,42 +15,44 @@ const navbarStyle = {
     zIndex: "100",
 };
 
+
 const navLinksWrapper = {
-    display: "flex",
-    flexDirection: "row",
-    marginLeft: "auto",
-    width: "120px",
-};
+  display: "flex",
+  flexDirection: "row",
+  marginLeft: "auto",
+  width: "120px"
+}
 
 const navLinksWrapperInvisible = {
-    display: "flex",
-    flexDirection: "row",
-    visibility: "hidden",
-};
+  display: "flex",
+  flexDirection: "row",
+  visibility: "hidden"
+}
 
 const iconStyle = {
     color: "#b6b6b6",
 };
 
+
 const navLinkStyle = {
-    height: "40px",
-    width: "40px",
-    padding: "0px",
-    margin: "0px",
-    lineHeight: "40px",
-};
+  height: "40px",
+  width: "40px",
+  padding: "0px",
+  margin: "0px",
+  lineHeight: "40px"
+}
 
 const navLinkTextStyle = {
-    color: "#b6b6b6",
-    height: "40px",
-    width: "auto",
-    paddingLeft: "6px",
-    paddingRight: "6px",
-    paddingTop: "0px",
-    paddingBottom: "0px",
-    margin: "0px",
-    lineHeight: "40px",
-};
+  color: "#b6b6b6",
+  height: "40px",
+  width: "auto",
+  paddingLeft: "6px",
+  paddingRight: "6px",
+  paddingTop: "0px",
+  paddingBottom: "0px",
+  margin: "0px",
+  lineHeight: "40px"
+}
 
 export default function Navbar() {
     return (
@@ -71,8 +73,7 @@ export default function Navbar() {
             </Nav.Link>
 
             <p style={navLinkTextStyle} className="navLinkTextStyle">
-                {" "}
-                |{" "}
+                |
             </p>
 
             <Nav.Link
@@ -130,4 +131,5 @@ export default function Navbar() {
             </div>
         </Nav>
     );
+
 }
