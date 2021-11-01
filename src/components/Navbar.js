@@ -74,7 +74,11 @@ export default function Navbar() {
         |
       </p>
 
-      <Nav.Link href="" style={navLinkTextStyle} className="navLinkTextStyle">
+      <Nav.Link
+        href="https://log.midheavy.tech/"
+        style={navLinkTextStyle}
+        className="navLinkTextStyle"
+      >
         Blog
       </Nav.Link>
 
