@@ -54,7 +54,7 @@ export default function Team() {
 
   // renders if loading is false
   return (
-    <Container className="buttface">
+    <Container style={{ paddingBottom: '20px' }}>
       <TeamTile imgPath={background} profile={members} />
       <ProfileTile imgPath={background[0]} isLeft={true} profile={members[0]} />
       <ProfileTile imgPath={background[1]} profile={members[1]} />
