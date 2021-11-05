@@ -1,21 +1,16 @@
-import React from "react";
-import { Container } from "react-bootstrap";
-import logo from "../assets/logo.svg";
+import React from 'react'
+import logo from '../assets/logo.svg'
 
 export default function AnimLogo() {
   return (
-    <Container fluid>
-
-      <img
-        alt="mh-logo"
-        id="logo-svg"
-        height="370"
-        style={{ marginTop: "5em", overflow: "", height: "35vh" }}
-        src={logo}
-      />
-
-    </Container>
-  );
+    <img
+      alt="mh-logo"
+      id="logo-svg"
+      style={{ marginTop: '10vh', overflow: '' }}
+      src={logo}
+      className="homeLogoStyle"
+    />
+  )
 }
 
 // const LogoRawSVG = () => {
