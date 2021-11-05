@@ -6,14 +6,13 @@ import Navbar from './components/Navbar'
 import Contact from './pages/Contact'
 import PageNotFound from './pages/PageNotFound'
 import ParticlesBackground from './components/ParticlesBackground'
-import { Container } from 'react-bootstrap'
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Navbar />
-        <Container style={{ maxHeight: '95vh', overflow: 'auto' }}>
+        <div style={{ width: '100%', height: '95vh', overflow: 'auto' }}>
           <Switch>
             <Route exact path={['/home', '/', '']}>
               <Home />
@@ -28,7 +27,7 @@ function App() {
               <PageNotFound />
             </Route>
           </Switch>
-        </Container>
+        </div>
       </Router>
       <ParticlesBackground />
     </div>
