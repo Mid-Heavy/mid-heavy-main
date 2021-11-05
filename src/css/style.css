@@ -123,6 +123,7 @@ body {
   width: 100%;
   height: 100%;
   background: #111;
+  overflow: hidden;
 }
 
 html {
@@ -131,6 +132,7 @@ html {
 
 body {
   font: normal 75% Arial, Helvetica, sans-serif;
+  -webkit-overflow-scrolling: touch;
 }
 
 canvas {
@@ -264,37 +266,6 @@ textarea {
     margin-top: 0;
   }
 }
-/* about page */
-.aboutPage {
-  width: 100%;
-  height: 91%;
-  padding: 0;
-  overflow-y: scroll;
-  flex-direction: column;
-  scroll-snap-type: y mandatory;
-  position: absolute;
-}
-
-.aboutSection {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  scroll-snap-align: start;
-  z-index: 10;
-}
-
-.aboutBox {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  height: 70%;
-  background-color: rgba(26, 26, 26, 0.7);
-}
 
 .aboutPage::-webkit-scrollbar {
   width: 1em;
@@ -340,7 +311,7 @@ textarea {
   .homeLogoText {
     font-size: 1rem;
   }
-  .card-body {
+  .profileTileCardBody {
     padding: 8px;
   }
   .profileTileCardStyle {
@@ -382,6 +353,7 @@ textarea {
   }
   .teamTileBodyStyle {
     grid-template-rows: 30px auto 30px;
+    padding: 8px;
   }
   .teamTileTitleStyle {
     font-size: 0.6rem;
@@ -402,7 +374,7 @@ textarea {
   .homeLogoText {
     font-size: 1.2rem;
   }
-  .card-body {
+  .profileTileCardBody {
     padding: 10px;
   }
   .profileTileCardStyle {
@@ -444,6 +416,7 @@ textarea {
   }
   .teamTileBodyStyle {
     grid-template-rows: 30px auto 30px;
+    padding: 10px;
   }
   .teamTileTitleStyle {
     font-size: 0.6rem;
@@ -463,6 +436,9 @@ textarea {
   }
   .homeLogoText {
     font-size: 1.3rem;
+  }
+  .profileTileCardBody {
+    padding: 20px;
   }
   .profileTileCardStyle {
     height: 150px;
@@ -500,6 +476,7 @@ textarea {
   }
   .teamTileBodyStyle {
     grid-template-rows: 35px auto 30px;
+    padding: 20px;
   }
   .teamTileTitleStyle {
     font-size: 0.8rem;
