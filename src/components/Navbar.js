@@ -92,7 +92,7 @@ export default function Navbar() {
         Team
       </Nav.Link>
 
-      <Nav.Link
+      {/* <Nav.Link
         href="/contact"
         as={Link}
         to="/contact"
@@ -100,7 +100,7 @@ export default function Navbar() {
         className="navLinkTextStyle"
       >
         Contact
-      </Nav.Link>
+      </Nav.Link> */}
 
       <div style={navLinksWrapper}>
         <Nav.Link

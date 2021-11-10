@@ -20,9 +20,9 @@ function App() {
             <Route exact path={'/team'}>
               <Team style={{ position: 'relative' }} />
             </Route>
-            <Route exact path={'/contact'}>
+            {/* <Route exact path={'/contact'}>
               <Contact />
-            </Route>
+            </Route> */}
             <Route exact path={''}>
               <PageNotFound />
             </Route>
