@@ -148,10 +148,22 @@ const tileProfilePic = {
 
 export default function ProfileTile(props) {
   const groupData = props.profile
-
-  console.log(groupData)
   const background = props.imgPath
   const isLeft = props.isLeft
+  // 'props.imgPath in window' checks if the prop is undefined somehow and returns boolean true if it is
+  if (props.imgPath in window) {
+    console.log('yes')
+    fetch(
+      `https://api.unsplash.com/search/photos?query=${props.imgQuery}&client_id=SfbYeZls6r-423sq3JfKFURM0DITgSS0DbVrErW-v7k`
+    )
+      .then((res) => res.json())
+      .then((result) => {
+        // TODO the result needs to be parsed for an image path before being pushed to the background
+        background.push(result)
+      })
+  }
+  console.log(background)
+
   if (isLeft) {
     return (
       <Card

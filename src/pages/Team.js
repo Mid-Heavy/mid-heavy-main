@@ -57,7 +57,7 @@ export default function Team() {
     <Container style={{ paddingBottom: '20px' }}>
       <TeamTile imgPath={background} profile={members} />
       <ProfileTile imgPath={background[0]} isLeft={true} profile={members[0]} />
-      <ProfileTile imgPath={background[1]} profile={members[1]} />
+      <ProfileTile imgQuery={'dark'} profile={members[1]} />
       <ProfileTile imgPath={background[2]} isLeft={true} profile={members[2]} />
       <ProfileTile imgPath={background[3]} profile={members[3]} />
     </Container>
