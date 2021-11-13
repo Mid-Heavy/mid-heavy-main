@@ -153,12 +153,15 @@ export default function ProfileTile(props) {
   // 'props.imgPath in window' checks if the prop is undefined somehow and returns boolean true if it is
   if (props.imgPath in window) {
     console.log('yes')
+    //the fetch should be moved to a node server at some point
+    //images need to remain hosted on unsplash though, so only store the urls to them
     fetch(
       `https://api.unsplash.com/search/photos?query=${props.imgQuery}&client_id=SfbYeZls6r-423sq3JfKFURM0DITgSS0DbVrErW-v7k`
     )
       .then((res) => res.json())
       .then((result) => {
         // TODO the result needs to be parsed for an image path before being pushed to the background
+        //results[1].urls.small
         background.push(result)
       })
   }
